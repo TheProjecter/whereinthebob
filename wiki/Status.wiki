@@ -1,3 +1,8 @@
-#summary current status of the project
+#summary current status of the project and quicklinks
 
-dunno.
+== Status ==
+`NULL`, lol
+
+== Usefulness ==
+   * [Tools]
+   * [Log]/[Plan]/etc
