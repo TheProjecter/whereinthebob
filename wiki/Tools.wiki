@@ -1,0 +1,17 @@
+#summary Tools of awesomeness.
+
+== Tools ==
+
+=== Wireframes/Diagrams ===
+
+  * [http://balsamiq.com/products/mockups balsamiq]
+  Great for wireframes. *Workflow*:
+    # grab the wireframe from the repo (if it exists),
+    # *import* it in the program,
+    # make the changes,
+    # *export* to `XML`,
+    # *commit* to the repo,
+    # *update image* in the documentation, ie. upload new version.
+
+  * [https://cacoo.com/ Cacoo] `(kaku)`
+  Pretty good for other types of diagrams (e.g.: `UML` of all sorts). Supports collaborative work.
