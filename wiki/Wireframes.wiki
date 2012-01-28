@@ -7,27 +7,36 @@
 *Wireframe*
 [https://lh3.googleusercontent.com/-tfX4fFGjDss/TyRSeP76tMI/AAAAAAAAJoc/rX2fRRH0fnM/s1054/basic-layout.png]
 
-*Elements*
-   * *Header* - Rationale: 
-   * *Content* - Rationale: 
-   * *Footer* - Rationale: 
+All pages will have this basic layout. The *header* and the *footer* will be the same on all the pages. The rest of the page's content goes in the *content* area.
 
-*MOAR description*
+*Header*
+
+Contains:
+   * Main *navigation menu*
+   * *Name* of the website
+
+*Footer*
+
+Contains:
+   * *Links* from the navigation menu
+   * *Privacy policy* and other legal stuff, if needed
 
 == Home ==
 *Wireframe*
 [https://lh4.googleusercontent.com/-rvk_2jiqJnk/TyRSeE_X-hI/AAAAAAAAJog/PlDACUgzsHE/s1054/home.png]
 
 *Elements*
-   # Short *description* of how the app works
-   # *Search box*
+   # Short *description* of how the app works - so the users won't need to go through the tedious process of reading through the *About* page
+   # *Search box* - this is where the user inputs the query
 
 
 == Results ==
 *Wireframe*
 [https://lh5.googleusercontent.com/-cv5_ktHKXoE/TyRSeLhMK_I/AAAAAAAAJok/-GWDtgOywj0/s1054/results.png]
 
+In the case that a query returns *more than one result*, this page is shown.
+
 *Elements*
-   # Breadcrumbs & stuff
-   # Searchbox
-   # Result set
+   # Breadcrumbs & stuff - maybe not in the _Search results page_?
+   # *Search box* - provides easy access to the search function
+   # *Result* set - the results of the query grouped by the level they're on
