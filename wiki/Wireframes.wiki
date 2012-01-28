@@ -1,0 +1,13 @@
+#summary User interface specification
+#labels Phase-Design
+
+= Wireframes =
+
+== Main layout ==
+*Wireframe*
+
+*Elements*
+   * *Label #1* - Rationale: 
+   * *Label #2* - Rationale: 
+
+*MOAR description*
