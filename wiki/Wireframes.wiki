@@ -1,13 +1,33 @@
 #summary User interface specification
 #labels Phase-Design
-
 = Wireframes =
+<wiki:toc max_depth="2" min_depth="1" />
 
 == Main layout ==
 *Wireframe*
+[https://lh3.googleusercontent.com/-tfX4fFGjDss/TyRSeP76tMI/AAAAAAAAJoc/rX2fRRH0fnM/s1054/basic-layout.png]
 
 *Elements*
-   * *Label #1* - Rationale: 
-   * *Label #2* - Rationale: 
+   * *Header* - Rationale: 
+   * *Content* - Rationale: 
+   * *Footer* - Rationale: 
 
 *MOAR description*
+
+== Home ==
+*Wireframe*
+[https://lh4.googleusercontent.com/-rvk_2jiqJnk/TyRSeE_X-hI/AAAAAAAAJog/PlDACUgzsHE/s1054/home.png]
+
+*Elements*
+   # Short *description* of how the app works
+   # *Search box*
+
+
+== Results ==
+*Wireframe*
+[https://lh5.googleusercontent.com/-cv5_ktHKXoE/TyRSeLhMK_I/AAAAAAAAJok/-GWDtgOywj0/s1054/results.png]
+
+*Elements*
+   # Breadcrumbs & stuff
+   # Searchbox
+   # Result set
