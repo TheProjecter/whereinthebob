@@ -1,0 +1,41 @@
+#summary Captain's log
+
+= LOLg =
+
+== Wk 1 ==
+== Wk 2 ==
+== Wk 3 ==
+_23 Jan - 29 Jan_
+
+*DIDO*
+   * created repo
+   * split tasks for next milestone
+
+*TODO* for next milestone:
+   * *Documentation*
+    * Aims
+    * UI
+    * Architecture
+
+== Wk 4 ==
+== Wk 5 ==
+== Wk 6 ==
+== Wk 7 ==
+_13 Feb - 19 Feb_
+
+*Deliverable* - _Design and specification_ report {{{[18 Feb]}}}
+
+== Wk 8 ==
+_20 Feb - 26 Feb_
+
+*Deliverable* - _Peer feedback_ report {{{[due 26 Feb]}}}
+
+== Wk 9 ==
+_27 Feb - 4 Mar_
+
+*Deliverable* - Revised _Spec and design_ plus _Implementation_ report {{{[1 Mar]}}}
+== Wk 10 ==
+== Wk 11 ==
+_12 Mar - 18 Mar_
+
+*App demo* {{{[13 Mar]}}}
