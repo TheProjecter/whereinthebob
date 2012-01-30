@@ -4,6 +4,9 @@
 = Database =
 
 == Diagram ==
+[https://lh4.googleusercontent.com/-J3Q78DW8dlQ/Tybh6azUI6I/AAAAAAAAJqA/JXhLQ8EW5bw/s670/DBDiagram.png]
+
+[https://cacoo.com/diagrams/tcKNzBvkoZxgroTx cacoo.com]
 
 == Description ==
 
