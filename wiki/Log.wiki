@@ -15,7 +15,7 @@ _23 Jan - 29 Jan_
    * *Documentation*
     * [https://docs.google.com/document/d/1ziU3Rdr1gx9cjjTD_767qG0OAt0a8BUf6mjwaQNtB3Y/edit Aims]
     * [Wireframes UI] (I need to add the [https://picasaweb.google.com/111808140972414893982/DIMV2?authuser=0&authkey=Gv1sRgCLmN4LzVpb-BVg&feat=directlink new wireframes])
-    * Architecture
+    * [Database Architecture] [[http://code.google.com/p/whereinthebob/issues/detail?id=7 Issue #7]]
 
 == Wk 4 ==
 _6 Feb - 12 Feb_
