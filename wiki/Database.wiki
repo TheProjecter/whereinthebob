@@ -8,6 +8,11 @@
 
 [https://lh6.googleusercontent.com/-qX25Mx6wlZU/TyhkGwsSMaI/AAAAAAAAJqM/TLMP_PNrPS0/s595/n-tier-architecture.png]
 
+The *presentation tier* is the topmost layer of the application, represented by the user interface. It translates user actions into commands for the application and it presents the information retrieved by the app in a way that the user can understand.
+
+*Logic/application tier*
+
+*Data tier*
 
 
 == Data model ==
