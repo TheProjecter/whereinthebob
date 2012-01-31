@@ -18,6 +18,13 @@ _23 Jan - 29 Jan_
     * Architecture
 
 == Wk 4 ==
+_6 Feb - 12 Feb_
+
+*TODO*
+   * user roles + use cases [[http://code.google.com/p/whereinthebob/issues/detail?id=2 Issue #2]]
+   * DB description [[http://code.google.com/p/whereinthebob/issues/detail?id=3 Issue #3]]
+   * models [[http://code.google.com/p/whereinthebob/issues/detail?id=4 Issue #4]]
+   * convert PDF to SVG [[http://code.google.com/p/whereinthebob/issues/detail?id=5 Issue #5]]
 == Wk 5 ==
 == Wk 6 ==
 == Wk 7 ==
