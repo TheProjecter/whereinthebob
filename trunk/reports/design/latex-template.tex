@@ -26,7 +26,7 @@
 \author{
 \alignauthor
 Author Names\\
-	   \affaddr{Group Name}\\
+	   \affaddr{Group F}\\
       \affaddr{itech/Dim3}\\
       \affaddr{Student no.s}\\
              \email{\{ name1, name2, name3, name4\}@students.glasgow.ac.uk }
@@ -84,6 +84,27 @@ Provide a concise summary of the design of the application
 \item	What are the advantages of using a Web Application Framework over other technology? 
 \item	And, what are the disadvantages?
 \end{itemize}
+
+\begin{tabular}{| p{2cm} | p{2cm} | p{3cm}|}
+\hline
+Data name & Data type & Rationale \\
+\hline
+id & Integer & Unique ID to identify each floor \\
+\hline
+description & String & Room description used to supply extra details to optimize the search\\
+\hline
+date\_created & Date & The floor plan was added\\
+\hline
+date\_updated & Date & The floor plan was last updated\\
+\hline
+level & Integer & Optimize the search and reduce the fetch time\\
+\hline
+rating & Integer & Optimize the search by using popularity\\
+\hline
+GUID & Integer & Unique ID for the comment\\
+\hline
+\end{tabular}	
+
 
 \section{Message Parsing}
 \begin{itemize}
