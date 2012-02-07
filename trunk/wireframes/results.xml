@@ -1,94 +1,51 @@
-<mockup version="1.0" skin="sketch" measuredW="891" measuredH="660" mockupW="516" mockupH="613">
+<mockup version="1.0" skin="sketch" measuredW="889" measuredH="440" mockupW="516" mockupH="303">
   <controls>
-    <control controlID="308" controlTypeID="com.balsamiq.mockups::Canvas" x="375" y="47" w="516" h="225" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="-1">
-      <controlProperties>
-        <backgroundAlpha>1</backgroundAlpha>
-        <borderStyle>roundedSolid</borderStyle>
-      </controlProperties>
-    </control>
-    <control controlID="309" controlTypeID="com.balsamiq.mockups::Canvas" x="375" y="282" w="516" h="303" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="-1">
+    <control controlID="340" controlTypeID="com.balsamiq.mockups::Canvas" x="373" y="137" w="516" h="303" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
         <borderStyle>roundedSolid</borderStyle>
       </controlProperties>
     </control>
-    <control controlID="310" controlTypeID="com.balsamiq.mockups::Title" x="458" y="66" w="357" h="-1" measuredW="349" measuredH="50" zOrder="2" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Where%20in%20the%20BOB%3F</text>
-      </controlProperties>
-    </control>
-    <control controlID="311" controlTypeID="com.balsamiq.mockups::SearchBox" x="466" y="221" w="220" h="-1" measuredW="170" measuredH="25" zOrder="3" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Where%20in%20the%20BOB%20is%20it%20%3F%3F</text>
-      </controlProperties>
-    </control>
-    <control controlID="312" controlTypeID="com.balsamiq.mockups::Button" x="717" y="219" w="-1" h="-1" measuredW="71" measuredH="30" zOrder="4" locked="false" isInGroup="-1">
-      <controlProperties>
-        <icon>SearchIcon%7Csmall</icon>
-        <text>GO</text>
-      </controlProperties>
-    </control>
-    <control controlID="313" controlTypeID="com.balsamiq.mockups::Paragraph" x="466" y="128" w="349" h="93" measuredW="200" measuredH="140" zOrder="5" locked="false" isInGroup="-1">
-      <controlProperties>
-        <size>14</size>
-        <text>Can%27t%20find%20a%20tutorial%20room%3F%0ADon%27t%20know%20where%20*Room%20721*%20is%3F%0A%20%0AGoogle%20it%2C%20lol.%20Or%20use%20our%20app.%0AThere%27s%20an%20app%20for%20that.</text>
-      </controlProperties>
-    </control>
-    <control controlID="314" controlTypeID="__group__" x="427" y="299" w="194" h="33" measuredW="194" measuredH="33" zOrder="6" locked="false" isInGroup="-1">
+    <control controlID="345" controlTypeID="__group__" x="425" y="154" w="194" h="33" measuredW="194" measuredH="33" zOrder="1" locked="false" isInGroup="-1">
       <groupChildrenDescriptors>
-        <control controlID="0" controlTypeID="com.balsamiq.mockups::SubTitle" x="0" y="0" w="-1" h="-1" measuredW="194" measuredH="33" zOrder="0" locked="false" isInGroup="314">
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::SubTitle" x="0" y="0" w="-1" h="-1" measuredW="194" measuredH="33" zOrder="0" locked="false" isInGroup="345">
           <controlProperties>
             <text>Results%20for%20_Query_</text>
           </controlProperties>
         </control>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="315" controlTypeID="__group__" x="375" y="611" w="516" h="49" measuredW="516" measuredH="49" zOrder="7" locked="false" isInGroup="-1">
-      <groupChildrenDescriptors>
-        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="516" h="49" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="315">
-          <controlProperties>
-            <borderStyle>roundedSolid</borderStyle>
-          </controlProperties>
-        </control>
-        <control controlID="1" controlTypeID="com.balsamiq.mockups::LinkBar" x="53" y="13" w="-1" h="-1" measuredW="411" measuredH="22" zOrder="1" locked="false" isInGroup="315">
-          <controlProperties>
-            <size>14</size>
-            <text>About%2C%20GU%20Campus%2C%20Rooms%20and%20floors%20directory%2C%20Feedback</text>
-          </controlProperties>
-        </control>
-      </groupChildrenDescriptors>
-    </control>
-    <control controlID="316" controlTypeID="com.balsamiq.mockups::Label" x="427" y="347" w="-1" h="-1" measuredW="74" measuredH="28" zOrder="8" locked="false" isInGroup="-1">
+    <control controlID="347" controlTypeID="com.balsamiq.mockups::Label" x="425" y="202" w="-1" h="-1" measuredW="74" measuredH="28" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
         <size>20</size>
         <text>%5BLevel%203%5D</text>
       </controlProperties>
     </control>
-    <control controlID="317" controlTypeID="com.balsamiq.mockups::Label" x="427" y="453" w="-1" h="-1" measuredW="73" measuredH="28" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="348" controlTypeID="com.balsamiq.mockups::Label" x="425" y="308" w="-1" h="-1" measuredW="73" measuredH="28" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
         <size>20</size>
         <text>%5BLevel%207%5D</text>
       </controlProperties>
     </control>
-    <control controlID="318" controlTypeID="com.balsamiq.mockups::Label" x="443" y="375" w="-1" h="-1" measuredW="69" measuredH="26" zOrder="10" locked="false" isInGroup="-1">
+    <control controlID="349" controlTypeID="com.balsamiq.mockups::Label" x="441" y="230" w="-1" h="-1" measuredW="69" measuredH="26" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <size>18</size>
         <text>%5BRoom%20%23%5D</text>
       </controlProperties>
     </control>
-    <control controlID="319" controlTypeID="com.balsamiq.mockups::Label" x="443" y="401" w="-1" h="-1" measuredW="69" measuredH="26" zOrder="11" locked="false" isInGroup="-1">
+    <control controlID="350" controlTypeID="com.balsamiq.mockups::Label" x="441" y="256" w="-1" h="-1" measuredW="69" measuredH="26" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
         <size>18</size>
         <text>%5BRoom%20%23%5D</text>
       </controlProperties>
     </control>
-    <control controlID="320" controlTypeID="com.balsamiq.mockups::Label" x="443" y="486" w="-1" h="-1" measuredW="69" measuredH="26" zOrder="12" locked="false" isInGroup="-1">
+    <control controlID="351" controlTypeID="com.balsamiq.mockups::Label" x="441" y="341" w="-1" h="-1" measuredW="69" measuredH="26" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
         <size>18</size>
         <text>%5BRoom%20%23%5D</text>
       </controlProperties>
     </control>
-    <control controlID="321" controlTypeID="com.balsamiq.mockups::CallOut" x="384" y="295" w="37" h="29" measuredW="37" measuredH="40" zOrder="13" locked="false" isInGroup="-1"/>
-    <control controlID="322" controlTypeID="com.balsamiq.mockups::CallOut" x="384" y="347" w="39" h="28" measuredW="39" measuredH="39" zOrder="14" locked="false" isInGroup="-1">
+    <control controlID="352" controlTypeID="com.balsamiq.mockups::CallOut" x="382" y="150" w="37" h="29" measuredW="37" measuredH="43" zOrder="7" locked="false" isInGroup="-1"/>
+    <control controlID="353" controlTypeID="com.balsamiq.mockups::CallOut" x="382" y="202" w="39" h="28" measuredW="39" measuredH="43" zOrder="8" locked="false" isInGroup="-1">
       <controlProperties>
         <text>2</text>
       </controlProperties>
