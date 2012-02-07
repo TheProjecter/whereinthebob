@@ -3,40 +3,37 @@
 = Wireframes =
 <wiki:toc max_depth="2" min_depth="1" />
 
-== Main layout ==
-*Wireframe*
-[https://lh3.googleusercontent.com/-tfX4fFGjDss/TyRSeP76tMI/AAAAAAAAJoc/rX2fRRH0fnM/s1054/basic-layout.png]
+== Home ==
+[https://lh5.googleusercontent.com/-o2b_Mr5ZH90/TzFCD-igWCI/AAAAAAAAJqc/G-bclpFFUqI/s613/home.png]
 
 All pages will have this basic layout. The *header* and the *footer* will be the same on all the pages. The rest of the page's content goes in the *content* area.
 
-*Header*
-
-Contains:
-   * Main *navigation menu*
-   * *Name* of the website
-
-*Footer*
-
-Contains:
-   * *Links* from the navigation menu
-   * *Privacy policy* and other legal stuff, if needed
-
-== Home ==
-*Wireframe*
-[https://lh4.googleusercontent.com/-rvk_2jiqJnk/TyRSeE_X-hI/AAAAAAAAJog/PlDACUgzsHE/s1054/home.png]
-
 *Elements*
-   # Short *description* of how the app works - so the users won't need to go through the tedious process of reading through the *About* page
+  * Header
+   # *Name* of the website
+   # *Tagline* / Short *description* of how the app works - so the users won't need to go through the tedious process of reading through the *About* page
    # *Search box* - this is where the user inputs the query
 
+  * Footer
+   * *Links* for the navigation menu
+   * *Privacy policy* and other legal stuff, if needed
 
-== Results ==
-*Wireframe*
-[https://lh5.googleusercontent.com/-cv5_ktHKXoE/TyRSeLhMK_I/AAAAAAAAJok/-GWDtgOywj0/s1054/results.png]
+== Results/Directory ==
+[https://lh4.googleusercontent.com/-C4z3H-0mhic/TzFIFxX30GI/AAAAAAAAJrY/0zz7By-ncFY/s546/results.png]
 
-In the case that a query returns *more than one result*, this page is shown.
+The pages *Results* and *Directory* share the same design: a list of all the levels, and for each one of them, a list of rooms. If a query returns more than one result, this page is shown with the list of matching rooms. In the case of the *Directory* page, all the levels are listed.
 
 *Elements*
-   # Breadcrumbs & stuff - maybe not in the _Search results page_?
-   # *Search box* - provides easy access to the search function
+   # *Query* - the searched term
    # *Result* set - the results of the query grouped by the level they're on
+
+== Floor/Room ==
+[https://lh6.googleusercontent.com/-fpC9MtpF27A/TzFHoe9XJKI/AAAAAAAAJrM/T8qbxQ_DMvg/s716/room.png]
+
+The pages for floors are very similar to the ones for particular rooms, the only difference being that instead of the *breadcrumbs* that appear on the room page, the floor page only displays the floor number.
+
+*Elements*
+  # *Level number* + *breadcrumbs*, in the case of the room page.
+  # *Floor map* - for the room page, the particular room is highlighted.
+  # *Comment form* - small `textarea` and a `Submit` button.
+  # *Comments* - previous comments (text + date posted)
