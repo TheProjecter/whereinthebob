@@ -25,4 +25,40 @@ The *presentation tier* is the topmost layer of the application, represented by 
 
 === Description ===
 
+==== Floor ====
+|| *Attribute* || *Type* || *Rationale* ||
+|| floor_id || Integer || Unique ID to identify each floor ||
+|| description || String || A short description of the room used to supply some info and to optimize the search. || 
+|| date_created || Date || The floor plan was added to the system || 
+|| date_updated || Date || The last modifications occurred || 
+|| level || Integer || Used to optimize the search and to reduce the time used to fetch the info || 
+|| rating || Integer || Improve the search by popularity || 
+|| GUID || GENERATED? || Unique ID for the comment || 
+
+==== Room ====
+|| *Attribute* || *Type* || *Rationale* ||
+|| room_id || Integer || Unique ID to identify each room || 
+|| floor_id || Integer || This is a foreign key to link the room to the floor || 
+|| room_name || Integer || FK referencing table `Name` || 
+|| type || Integer || `FK` referencing the table `Room_Type` || 
+|| description || String || Info about the room || 
+|| rating || Integer || For popularity purposes and to sort the results. || 
+|| GUID || GENERATED? || Unique ID for the comment || 
+
+==== Comment ====
+|| *Attribute* || *Type* || *Rationale* ||
+|| GUID || GENERATED? || Unique ID for the comment || 
+|| Comment || String || To content of the comment. || 
+|| Date || Date || The comment was posted.|| 
+
+==== `Room_Type` ====
+|| *Attribute* || *Type* || *Rationale* ||
+|| type_id || `Integer` || Unique ID || 
+|| type || `String` || Type of the room, e.g.: Lab, Lecture Theatre, etc. || 
+
+==== `Room_Name` ====
+|| *Attribute* || *Type* || *Rationale* ||
+|| room_id || `Integer` || FK referencing `Room.room_id` ||
+|| name || `String` || The name for the room ||
+
 === SQL ===
