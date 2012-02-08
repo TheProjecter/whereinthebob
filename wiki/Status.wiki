@@ -1,7 +1,7 @@
 #summary current status of the project and quicklinks
 
 == Status ==
-*AndreiM*: I've made some [Wireframes] `[v1]` (they're on the repo as well), but then I saw this [http://demo.tutorialzine.com/2010/08/simple-movie-search-app-jquery-ajax/movieApp.html movie search app thing], and I made [https://picasaweb.google.com/111808140972414893982/DIMV2?authuser=0&authkey=Gv1sRgCLmN4LzVpb-BVg&feat=directlink another set of wireframes]. The text that is in the Wireframes wiki should still be good, but I still need to add the new images (including the labels).
+*AndreiM*: We've got [Wireframes]. We've got some [Database Architecture] (still needs some more content for the *N-tier architecture*).
 
 == Usefulness ==
    * [Tools]
