@@ -13,21 +13,28 @@ _23 Jan - 29 Jan_
 
 *TODO* for next milestone:
    * *Documentation*
-    * [https://docs.google.com/document/d/1ziU3Rdr1gx9cjjTD_767qG0OAt0a8BUf6mjwaQNtB3Y/edit Aims]
-    * [Wireframes UI] (I need to add the [https://picasaweb.google.com/111808140972414893982/DIMV2?authuser=0&authkey=Gv1sRgCLmN4LzVpb-BVg&feat=directlink new wireframes])
-    * [Database Architecture] [[http://code.google.com/p/whereinthebob/issues/detail?id=7 Issue #7]]
+    * ~~[https://docs.google.com/document/d/1ziU3Rdr1gx9cjjTD_767qG0OAt0a8BUf6mjwaQNtB3Y/edit Aims]~~
+    * ~~[Wireframes UI] (I need to add the [https://picasaweb.google.com/111808140972414893982/DIMV2?authuser=0&authkey=Gv1sRgCLmN4LzVpb-BVg&feat=directlink new wireframes])~~
+    * ~~[Database Architecture] [[http://code.google.com/p/whereinthebob/issues/detail?id=7 Issue #7]]~~
 
 == Wk 4 ==
-_6 Feb - 12 Feb_
+_30 Jan - 4 Feb_
 
 *TODO*
-   * Wireframes + descriptions [[http://code.google.com/p/whereinthebob/issues/detail?id=6 Issue #6]]
+   * ~~Wireframes + descriptions [[http://code.google.com/p/whereinthebob/issues/detail?id=6 Issue #6]]~~
    * ~~user roles~~ + use cases [[http://code.google.com/p/whereinthebob/issues/detail?id=2 Issue #2]]
-   * DB description [[http://code.google.com/p/whereinthebob/issues/detail?id=3 Issue #3]]
+   * ~~DB description~~ [[http://code.google.com/p/whereinthebob/issues/detail?id=3 Issue #3]]
    * models [[http://code.google.com/p/whereinthebob/issues/detail?id=4 Issue #4]]
    * convert PDF to SVG [[http://code.google.com/p/whereinthebob/issues/detail?id=5 Issue #5]]
 
 == Wk 5 ==
+_6 Feb - 12 Feb_
+
+*TODO*
+
+   * finish the *Design and Specs* doc.
+
+
 == Wk 6 ==
 == Wk 7 ==
 _13 Feb - 19 Feb_
