@@ -157,6 +157,63 @@ The required and desired functionality of our application is as follows:
 
 \section{Client Interface}
 
+We have tried to design a user interface that is very intuitive, making it
+easy for the users to find what they're looking for.
+
+All the pages will have the basic layout of the home page
+(Figure \ref{img:wireframes-home}):
+\begin{itemize}
+	\item{
+		\textbf{Header}
+		\begin{enumerate}
+			\item{
+				\textbf{Name} of the website
+			}
+			\item{
+				\textbf{Tagline}/short description of how the app works, so
+				the users won't have to go through the tedious process of
+				reading through an \textbf{About} page
+			}
+			\item{
+				\textbf{Search box} - this is where the users input their
+				query
+			}
+		\end{enumerate}
+	}
+
+	\item{
+		\textbf{Content} - the rest of the page will be displayed in this area
+	}
+	
+	\item{\textbf{Footer} - contains the links for the \textbf{navigation menu}
+	}
+\end{itemize}
+
+
+The pages \textbf{Results} and \textbf{Directory} share the same design: a list
+of all the levels, and for each one of them, a list of rooms. If a query returns
+more than one result, this page is shown with the list of matching rooms. In the
+case of the Directory page, all the levels are listed.
+
+Elements
+\begin{itemize}
+	\item{Query - the searched term}
+	\item{Result set - the results of the query grouped by the level they're on}
+\end{itemize}
+
+
+The pages for floors are very similar to the ones for particular rooms, the only
+difference being that instead of the breadcrumbs that appear on the room page,
+the floor page only displays the floor number.
+
+Elements
+\begin{enumerate}
+	\item{Level number + breadcrumbs, in the case of the room page.}
+	\item{Floor map - for the room page, the particular room is highlighted.}
+	\item{Comment form - small textarea and a Submit button.}
+	\item{Comments - previous comments (text + date posted)}
+\end{enumerate}
+
 
 \section{Application Architecture}
 
@@ -198,5 +255,29 @@ Be sincere and be specific about how others have helped your group.
 
 \bibliographystyle{abbrv}
 \bibliography{sig-proc}
+
+\section{Appendix}
+
+\begin{figure}
+	% \begin{center}
+		\includegraphics[scale=0.35]{img/wireframes/home.pdf}
+		\caption{Wireframe for the Home page.}
+		\label{img:wireframes-home}
+	% \end{center}
+\end{figure}
+\begin{figure}
+	% \begin{center}
+		\includegraphics[scale=0.35]{img/wireframes/results.pdf}
+		\caption{Wireframe for the Results/Directory page.}
+		\label{img:wireframes-results}
+	% \end{center}
+\end{figure}
+\begin{figure}
+	% \begin{center}
+		\includegraphics[scale=0.35]{img/wireframes/room.pdf}
+		\caption{Wireframe for the Room/Floor page.}
+		\label{img:wireframes-room}
+	% \end{center}
+\end{figure}
 
 \end{document}
