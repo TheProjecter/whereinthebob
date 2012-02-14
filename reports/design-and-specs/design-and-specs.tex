@@ -3,6 +3,8 @@
 \usepackage{color}
 \usepackage{graphics,graphicx}
 
+\usepackage{aeguill}
+
 \usepackage{epsfig}
 \usepackage{epstopdf}
 
@@ -55,13 +57,13 @@ an ambiguous identifier and the ability to give comments on a particular room.
 The application name is ``Where in the BOB'' and its purpose is to provide
 students, lecturers and visitors of University of Glasgow with an identifying
 system of rooms located in Boyd Orr Building. The application intends to
-offer a customize interface to this facility where a particular user has the
+offer a \todo{customize} interface to this facility where a particular user has the
 options to view from a floor plan perspective the location of a given room,
 to view details about the room searched and provide comments and ratings of
-the room in cause. Moreover, the application will offer details if the room
-or the floor is accessible or not.
+the room in cause. \todo{Moreover, the application will offer details if the room
+or the floor is accessible or not.}
 
-The assumption, in this case, is to build such a system based on the provided
+The \todo{assumption}, in this case, is to build such a system based on the provided
 floor plans of the building. Furthermore, the search facilities are restricted
 to a given number of most well know room names amongst students (e.g. Level 3
 Computer Science lab) as well as their official names(e.g. Room 720). In this
@@ -160,8 +162,9 @@ The required and desired functionality of our application is as follows:
 We have tried to design a user interface that is very intuitive, making it
 easy for the users to find what they're looking for.
 
-All the pages will have the basic layout of the home page
-(Figure \ref{img:wireframes-home}):
+\subsection*{Wireframes}
+All the pages will have the basic layout of the \textbf{Home} page
+(Figure \ref{img:wireframes-home}), which consists of:
 \begin{itemize}
 	\item{
 		\textbf{Header}
@@ -190,29 +193,81 @@ All the pages will have the basic layout of the home page
 \end{itemize}
 
 
-The pages \textbf{Results} and \textbf{Directory} share the same design: a list
-of all the levels, and for each one of them, a list of rooms. If a query returns
-more than one result, this page is shown with the list of matching rooms. In the
-case of the Directory page, all the levels are listed.
+The pages \textbf{Results} and \textbf{Directory} share the same design (Figure 
+\ref{img:wireframes-results}): a list of all the levels, and for each one of 
+them, a list of rooms. If a query returns more than one result, this page is 
+shown with the list of matching rooms. In the case of the Directory page, all 
+the levels are listed. Their elements are:
+\begin{enumerate}
+	\item{\textbf{Query} - the searched term}
+	\item{\textbf{Result set} - the results of the query grouped by the level
+	they're on}
+\end{enumerate}
 
-Elements
+
+The pages for \textbf{floors} are very similar to the ones for particular
+\textbf{rooms} (Fig. \ref{img:wireframes-room}), the only difference being that
+instead of the breadcrumbs that appear on the room page, the floor page only 
+displays the floor number. The structure of these pages:
+\begin{enumerate}
+	\item{\textbf{Breadcrumbs} Level number + room number, in the case of 
+	the room page.}
+	\item{\textbf{Floor map} - for the room page, the particular room is
+	highlighted.}
+	\item{\textbf{Comment form} - small \texttt{textarea} and a 
+	\texttt{Submit} button.}
+	\item{\textbf{Comments} - previous comments (text + date posted)}
+\end{enumerate}
+
+\subsection*{User classes}
+This section presents a use case analysis of the website. The use cases 
+presented here model the interaction between users and the website. These use 
+cases will be used to guide usability, to provide a task-oriented 
+documentation system.
+
+There will be 2 user classes:
 \begin{itemize}
-	\item{Query - the searched term}
-	\item{Result set - the results of the query grouped by the level they're on}
+	\item \textbf{Visitor} - end users of the system;
+	\item \textbf{Administrator} - techy, but not much
 \end{itemize}
 
+\subsubsection*{Visitor}
+Visitors are the \textbf{end-users} of the application. They could be either
+new students who are not used to the University's campus yet, or anyone else
+who can't find their way through the complex system of rooms and hallways that
+is the Boyd Orr Building.
 
-The pages for floors are very similar to the ones for particular rooms, the only
-difference being that instead of the breadcrumbs that appear on the room page,
-the floor page only displays the floor number.
+\emph{``I'm a level 2 CS student and I can't find my way to the lab. All 
+I know is I should be in the \guillemotleft Level 2 lab in the Boyd Orr
+\guillemotright. Now, I've managed to find the \textbf{floor}, but I'm not sure
+which room I need to go to. Oh,look! There's a room directory up on the wall, 
+but it's not very helpful. I sure wish there was an app for this, lol!''}
 
-Elements
-\begin{enumerate}
-	\item{Level number + breadcrumbs, in the case of the room page.}
-	\item{Floor map - for the room page, the particular room is highlighted.}
-	\item{Comment form - small textarea and a Submit button.}
-	\item{Comments - previous comments (text + date posted)}
-\end{enumerate}
+His goal is to find information regarding a particular room (e.g.: what floor 
+it is on, where exactly it is on that floor, etc). He might know the room 
+number or some other unofficial name for that room.
+
+They can ask the application about different rooms in the BOB. If that room 
+name exists, the app shows an image with the appropriate floor plan and the 
+searched room is highlighted.
+
+\subsubsection*{Administrator}
+Someone needs to manage all that data, so there will be an administrator. He is
+responsible for maintaining the database (room labels, floor plans).
+
+\subsubsection*{User matrix}
+\begin{tabular}{| p{4cm} | p{1cm} | p{1cm}|} \hline
+\textbf{Functionality} & \textbf{Visitor} & \textbf{Admin} \\ \hline
+Browse directory & X & X \\ \hline
+Search for a room & X & X \\ \hline
+Post comment & X & X \\ \hline
+Send feedback & X & X \\ \hline
+Edit/Delete Comment & & X \\ \hline
+Add/edit floor &  & X \\ \hline
+Add/edit room & & X \\ \hline
+Add/edit floor plan & & X \\ \hline
+
+\end{tabular}	
 
 
 \section{Application Architecture}
@@ -257,27 +312,6 @@ Be sincere and be specific about how others have helped your group.
 \bibliography{sig-proc}
 
 \section{Appendix}
-
-\begin{figure}
-	% \begin{center}
-		\includegraphics[scale=0.35]{img/wireframes/home.pdf}
-		\caption{Wireframe for the Home page.}
-		\label{img:wireframes-home}
-	% \end{center}
-\end{figure}
-\begin{figure}
-	% \begin{center}
-		\includegraphics[scale=0.35]{img/wireframes/results.pdf}
-		\caption{Wireframe for the Results/Directory page.}
-		\label{img:wireframes-results}
-	% \end{center}
-\end{figure}
-\begin{figure}
-	% \begin{center}
-		\includegraphics[scale=0.35]{img/wireframes/room.pdf}
-		\caption{Wireframe for the Room/Floor page.}
-		\label{img:wireframes-room}
-	% \end{center}
-\end{figure}
+\input{appendix}
 
 \end{document}
