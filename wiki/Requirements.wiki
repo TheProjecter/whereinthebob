@@ -25,3 +25,14 @@ They can ask the application about different rooms in the BOB. If that room name
 
 ==== Administrator ====
 Someone needs to manage all that data, so there will be an administrator. He is responsible for maintaining the database (room labels, floor plans).
+
+=== User matrix ===
+|| *Functionality*     || *Visitor* || *Administrator* ||
+|| Browse directory    ||  X  ||  X  ||
+|| Search for a room   ||  X  ||  X  ||
+|| Post comment        ||  X  ||  X  ||
+|| Send feedback       ||  X  ||  X  ||
+|| Edit/Delete Comment ||     ||  X  ||
+|| Add/edit floor      ||     ||  X  ||
+|| Add/edit room       ||     ||  X  ||
+|| Add/edit floor plan ||     ||  X  ||
