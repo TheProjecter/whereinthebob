@@ -297,15 +297,17 @@ The \textbf{data tier} is queried by the web server and it responds with the req
 % TABLE -- The floor data model + structure of the floor database %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{table}
-\small{
+%\begin{table}
+%\small{
 \begin{tabular}{| p{1.8cm} | p{1cm} | p{4.2cm}|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Floor data model}} \\
 \hline
 Data name & Data type & Rationale \\
 \hline
 id & Integer & Unique ID to identify each floor \\
 \hline
-description & String & Room description used to supply extra details to optimize the search\\
+description & String & Supplies extra details to optimize the search\\
 \hline
 date\_created & Date & The floor plan was added\\
 \hline
@@ -318,28 +320,30 @@ rating & Integer & Optimize the search by using popularity\\
 GUID & Integer & Unique ID for the comment\\
 \hline
 \end{tabular}	
-\caption{Floor data model}}
-\end{table}
+%\caption{\small{Floor data model}}}
+%\end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\vspace{1em}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TABLE -- Room data model + the structure of room database %%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{table}
-\small{
+%\begin{table}
+%\small{
 \begin{tabular}{| p{1.8cm} | p{1cm} | p{4.2cm}|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Room data model}} \\
 \hline
 Data name & Data type & Rationale \\
 \hline
 id & Integer & Unique ID to identify each room \\
 \hline
-floor\_id & Integer & Foreign key to link the room to the floor\\
+floor\_id & Integer & FK to link the room to the floor\\
 \hline
-room\_name & Integer & Foreign key referencing table Room\_Name\\
+room\_name & Integer & FK to link Room\_Name\\
 \hline
-type & Integer & Foreign key referencing table Room\_Type \\
+type & Integer & FK to link Room\_Type \\
 \hline
 description & String & Information about the room\\
 \hline
@@ -348,18 +352,20 @@ rating & Integer & Optimize the search by using popularity\\
 GUID & Integer & Unique ID for the comment\\
 \hline
 \end{tabular}	
-\caption{Room data model}}
-\end{table}
+%\caption{\small{Room data model}}}
+%\end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\vspace{1em}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TABLE -- Comment data model + the structure of comment database %%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{table}
-\small{
+%\begin{table}
+%\small{
 \begin{tabular}{| p{1.8cm} | p{1cm} | p{4.2cm}|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Comment data model}} \\
 \hline
 Data name & Data type & Rationale \\
 \hline
@@ -370,19 +376,21 @@ comment & String & The content of the comment\\
 date & Date & The comment was posted\\
 \hline
 \end{tabular}	
-\caption{Comment data model}}
-\end{table}
+%\caption{\small{Comment data model}}}
+%\end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\vspace{1em}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TABLE - Room_Type data model + the structure of room_type database%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{table}
-\small{
+%\begin{table}
+%\small{
 \begin{tabular}{| p{1.8cm} | p{1cm} | p{4.2cm}|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Room\_Type data model}} \\
 \hline
 Data name & Data type & Rationale \\
 \hline
@@ -391,18 +399,20 @@ type\_id & Integer & Unique ID \\
 type & String & Type of the room (e.g. lab, lecture theatre, etc.)\\
 \hline
 \end{tabular}	
-\caption{Room\_Type data model}}
-\end{table}
+%\caption{\small{Room\_Type data model}}}
+%\end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\vspace{1em}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TABLE - Room_Name data model + the structure of room_name database%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{table}
-\small{
+%\begin{table}
+%\small{
 \begin{tabular}{| p{1.8cm} | p{1cm} | p{4.2cm}|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Room\_name data model}} \\
 \hline
 Data name & Data type & Rationale \\
 \hline
@@ -411,8 +421,8 @@ room\_id & Integer & FK refencing Room.room\_id \\
 name & String & Name of the room \\
 \hline
 \end{tabular}	
-\caption{Room\_Name data model}}
-\end{table}
+%\caption{\small{Room\_Name data model}}}
+%\end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
