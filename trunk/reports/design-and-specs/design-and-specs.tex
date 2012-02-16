@@ -127,7 +127,6 @@ knowledge regarding the tools used.
 
 
 
-
 \subsection{Functionality}
 The required and desired functionality of our application is as follows:
 \begin{itemize}
@@ -290,6 +289,12 @@ way that the user can understand.
 
 \todo{Tables}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TABLE -- The floor data model + structure of the floor database %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table}
 \begin{tabular}{| p{2cm} | p{2cm} | p{3cm}|}
 \hline
 Data name & Data type & Rationale \\
@@ -309,6 +314,100 @@ rating & Integer & Optimize the search by using popularity\\
 GUID & Integer & Unique ID for the comment\\
 \hline
 \end{tabular}	
+\caption{Floor data model}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TABLE -- Room data model + the structure of room database %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table}
+\begin{tabular}{| p{2cm} | p{2cm} | p{3cm}|}
+\hline
+Data name & Data type & Rationale \\
+\hline
+id & Integer & Unique ID to identify each room \\
+\hline
+floor\_id & Integer & Foreign key to link the room to the floor\\
+\hline
+room\_name & Integer & Foreign key referencing table Room\_Name\\
+\hline
+type & Integer & Foreign key referencing table Room\_Type \\
+\hline
+description & String & Information about the room\\
+\hline
+rating & Integer & Optimize the search by using popularity\\
+\hline
+GUID & Integer & Unique ID for the comment\\
+\hline
+\end{tabular}	
+\caption{Room data model}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TABLE -- Comment data model + the structure of comment database %%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table}
+\begin{tabular}{| p{2cm} | p{2cm} | p{3cm}|}
+\hline
+Data name & Data type & Rationale \\
+\hline
+GUID & Integer & Unique ID for the comment\\
+\hline
+comment & String & The content of the comment\\
+\hline
+date & Date & The comment was posted\\
+\hline
+\end{tabular}	
+\caption{Comment data model}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TABLE - Room_Type data model + the structure of room_type database%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table}
+\begin{tabular}{| p{2cm} | p{2cm} | p{3cm}|}
+\hline
+Data name & Data type & Rationale \\
+\hline
+type\_id & Integer & Unique ID \\
+\hline
+type & String & Type of the room (e.g. lab, lecture theatre, etc.)\\
+\hline
+\end{tabular}	
+\caption{Room\_Type data model}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TABLE - Room_Name data model + the structure of room_name database%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table}
+\begin{tabular}{| p{2cm} | p{2cm} | p{3cm}|}
+\hline
+Data name & Data type & Rationale \\
+\hline
+room\_id & Integer & FK refencing Room.room\_id \\
+\hline
+name & String & Name of the room \\
+\hline
+\end{tabular}	
+\caption{Room\_Name data model}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \section{Message Passing}
