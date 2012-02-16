@@ -80,7 +80,7 @@ Another goal is to provide the user with a list of room names in case that
 there are multiple rooms across campus especially in the Boyd Orr Building.
 A particular goal which will provide the user with a consistent and optimized
 results is to:
-\begin{itemize}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
 	\item  search again in case of not found 
 	\item  leave feedback
 	\item  comment on room 
@@ -118,7 +118,7 @@ to use open source software which cause another issue in terms of technical
 knowledge regarding the tools used.
 
 \subsubsection{Application constraints}
-\begin{itemize}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
 	\item \textbf{End-user environment}: The end-user system can be deployed
 	on a wide range of devices (e.g. desktop or mobile systems). These devices
 	come with a restricted screen size.
@@ -130,9 +130,9 @@ knowledge regarding the tools used.
 
 \subsection{Functionality}
 The required and desired functionality of our application is as follows:
-\begin{itemize}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
 	\item The required functionality:
-	\begin{itemize}
+	\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
 		\item Accept textual search terms and return results for a searched
 		room identifier 
 		
@@ -149,7 +149,7 @@ The required and desired functionality of our application is as follows:
 	\end{itemize}
 
 	\item The desired functionality:
-	\begin{itemize}
+	\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
 		\item Allow users to see the floor map directory
 		\item Allow users to search give feedback on the application
 		\item Allow users to return and search for a different room
@@ -188,8 +188,11 @@ searched room is highlighted.
 \subsubsection*{Administrator}
 Someone needs to manage all that data, so there will be an administrator. He is
 responsible for maintaining the database (room labels, floor plans).
+\todo{Manager}
 
 \subsubsection*{User matrix}
+\todo{brief description of the user matrix}
+
 \begin{tabular}{| p{4cm} | c | c |} \hline
 \textbf{Functionality} & \textbf{Visitor} & \textbf{Admin} \\ \hline
 Browse directory & X & X \\ \hline
@@ -205,13 +208,16 @@ Add/edit floor plan & & X \\ \hline
 We have tried to design a user interface that is very intuitive, making it
 easy for the users to find what they're looking for.
 
+\subsection*{Walkthrough}
+\todo{TODO}
+
 \subsection*{Wireframes}
 All the pages will have the basic layout of the \textbf{Home} page
 (Figure \ref{img:wireframes-home}), which consists of:
-\begin{itemize}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
 	\item{
 		\textbf{Header}
-		\begin{enumerate}
+		\begin{enumerate} \itemsep1pt \parskip0pt \parsep0pt
 			\item{
 				\textbf{Name} of the website
 			}
@@ -241,7 +247,7 @@ The pages \textbf{Results} and \textbf{Directory} share the same design (Figure
 them, a list of rooms. If a query returns more than one result, this page is 
 shown with the list of matching rooms. In the case of the Directory page, all 
 the levels are listed. Their elements are:
-\begin{enumerate}
+\begin{enumerate} \itemsep1pt \parskip0pt \parsep0pt
 	\item{\textbf{Query} - the searched term}
 	\item{\textbf{Result set} - the results of the query grouped by the level
 	they're on}
@@ -252,7 +258,7 @@ The pages for \textbf{floors} are very similar to the ones for particular
 \textbf{rooms} (Fig. \ref{img:wireframes-room}), the only difference being that
 instead of the breadcrumbs that appear on the room page, the floor page only 
 displays the floor number. The structure of these pages:
-\begin{enumerate}
+\begin{enumerate} \itemsep1pt \parskip0pt \parsep0pt
 	\item{\textbf{Breadcrumbs} Level number + room number, in the case of 
 	the room page.}
 	\item{\textbf{Floor map} - for the room page, the particular room is
