@@ -271,16 +271,20 @@ Add/edit floor plan & & X \\ \hline
 \section{Application Architecture}
 
 \subsection*{N-tier architecture}
-The N-tier architecture (Figure \ref{img:arch-ntier}) blahblahblah.
+In order to separate data access, bussiness logic, and presentation from each
+other, we have broken our application into 3 logical tiers.
 
 The \textbf{presentation tier} is the topmost layer of the application,
 represented by the user interface. It translates user actions into commands
 for the application and it presents the information retrieved by the app in a
 way that the user can understand.
 
-\todo{\textbf{Logic/application tier}}
+The \textbf{logic/application tier} is responsible for handling the requests
+from the client, and making decisions regarding what information it should
+retrieve from the database. It then processes and passes the received data
+from the tier beneath it to the one above it.
 
-\todo{\textbf{Data tier}}
+The \textbf{data tier} is queried by the web server and it responds with the required information.
 
 \subsection*{ERD}
 
