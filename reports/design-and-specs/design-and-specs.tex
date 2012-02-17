@@ -47,12 +47,13 @@ Wei Zhang, 1104733, 1104733z@student.gla.ac.uk\\
 
 \textbf{Where in the BOB?} is a simple web application that enables users to
 find the location of a room in the Boyd Orr Building. 
-   
-This application aims to provide a simple interface where the user inserts the
-name of a room in a text field and as a result he gets a floor map in 
-\texttt{SVG} format with the room highlighted. It provides a list of room names
-in case of an ambiguous identifier and the ability to give comments on a
-particular room. 
+
+The application aims to provide a room search interface to the user.
+Results are returned along with a relevant floor plan highlighted to
+indicate the particular room.
+
+Our interface also provides relevant lists of room names in case of an ambiguous 
+identifier being passed as a query and the ability comment on a particular room. 
 
 \end{abstract}
 
@@ -61,19 +62,19 @@ particular room.
 The application name is ``Where in the BOB'' and its purpose is to provide
 students, lecturers and visitors of University of Glasgow with an identifying
 system of rooms located in Boyd Orr Building. The application intends to
-offer an interface where a particular user has the options to view from a 
-floor plan perspective the location of a given room, to view details about 
-the room searched and provide comments and ratings of the room in cause. 
+offer an interface where a particular user has the options to view a particular 
+room from a floor plan perspective, to view details pertaining to that room and 
+leave comments or ratings for it.
 
-The objective, in this case, is to build such a system based on the
-provided floor plans of the building. Furthermore, the search facilities are
-restricted to a given number of most well know room names amongst students
+The objective, in this case, is to build such a system based on existing 
+floor plans of the building. Furthermore, the search facilities are
+restricted to a given number of well known room names amongst students
 (e.g. Level 3 Computer Science lab) as well as their official names(e.g. Room
 720). In this case, if the room is identified, the result of the search will
-contain a floor plan with the location of the searched room highlighted, details
+contain a floor plan with the location of the room highlighted, details
 about the room (e.g. number of seats, other details of access, comments on the
-room), otherwise it will return a message to confirm that the search process has
-failed to identify that particular room (i.e. The rooms was not identified).
+room), otherwise it will return a message notifying the user that the search 
+process has failed to identify the queried roomroom (i.e. The rooms was not identified).
 
 \subsection{Goals}
 Another goal is to provide the user with a list of room names in case that
@@ -90,21 +91,19 @@ results is to:
 \subsection{Assumptions}
 
 We made a number of assumptions based on the purpose of this web application. 
-It is assumed that users have a minimum knowledge of English and have the basic 
-knowledge of how to use a web browser as well as having Internet connection on 
-the used devices.
+It is assumed that users have at least a bare minimum understanding of the English
+language and the required skills to utilise a web browser  as well as having 
+an Internet connection.
 
 The visual interaction with the application makes it necessary for the user to 
 be able to see and to use one hand in order to interact with the device as they 
 do with other applications. This include holding a mouse in order to move a 
 pointer around the screen or using fingers to point to different parts of the 
-screen on touchscreen handheld devices.
+screen on touch-screen hand-held devices.
 
 Another assumption we made is that users will be students or visitors with 
-minimal knowledge about the campus and they use their handheld device for 
+minimal knowledge about the campus and they use their hand-held device for 
 coordination around campus.
-
-
 
 \subsection{Constraints}
 
@@ -224,14 +223,14 @@ If there is an exact match, the page for that particular room is displayed.
 
 Once the user gets to a page of a room, a large floor map is provided, with
 the searched room being highlighted. All the rooms have labels, so people can
-search for the adjancent rooms, once they are on that level.
+search for the adjacent rooms, once they are on that level.
 
-When clicking on a room area on the floorplan, a tooltip appears, showing 
+When clicking on a room area on the floor-plan, a tool-tip appears, showing 
 whatever information there is available regarding that room (e.g.: other known
 names, type of the room, link to the room's page, etc.). Another option for
-displaying this would have been to do it on hovering over that area, but the app
-is also intended to be used with handheld devices, which have different pointer
-behaviours than, say, a desktop PC with a mouse.
+displaying this would have been to do it on hovering over that area, but the 
+application is also intended to be used with hand-held devices, which have different
+pointer behaviours than, say, a desktop PC with a mouse.
 
 \subsection*{Wireframes}
 We have tried to design a user interface that is very intuitive, making it
@@ -250,7 +249,7 @@ All the pages will have the basic layout of the \textbf{Home} page
 				\textbf{Name} of the website
 			}
 			\item{
-				\textbf{Tagline}/short description of how the app works, so
+				\textbf{Tagline}/short description of how the application works, so
 				the users won't have to go through the tedious process of
 				reading through an \textbf{About} page
 			}
@@ -316,12 +315,12 @@ displays the floor number. The structure of these pages:
 \end{center}
 
 
-In order to separate data access, bussiness logic, and presentation from each
+In order to separate data access, business logic, and presentation from each
 other, we have broken our application into 3 logical tiers.
 
 The \textbf{presentation tier} is the topmost layer of the application,
 represented by the user interface. It translates user actions into commands
-for the application and it presents the information retrieved by the app in a
+for the application and it presents the information retrieved by the application in a
 way that the user can understand.
 
 The \textbf{logic/application tier} is responsible for handling the requests
@@ -502,9 +501,9 @@ technologies will be employed:
 
 \item \textbf{Server to Data Store } communications will be handled trough standards SQL queries.
 The underlying protocol will differ in our development and production servers
-as SQLite is easyer to use in a development eviorment (local api calls ). \\
+as SQLite is easier to use in a development environment (local api calls ). \\
 \\
-In an production enviroment however the standard MySql connection protocol will
+In an production environment however the standard MySql connection protocol will
 be used.
 \end{itemize}
 Our chose framework , DjAngo supports all of these technologies and protocols
