@@ -436,22 +436,31 @@ name & String & Name of the room \\
 
 (Figure \ref{img:diagram-sequence}):
 
-Client to Server requests are standard HTTP requests. \\
-POST will be used for sensitive data such as "Username" and "Password" strings
-to avoid leaving personally identifiable information behind in places
-such as the browser's url history.\\
-\\
-GET requests with parameters will be used in the "floor" and "room" lookup
-requests. \\
+WhereInTheBob is a fully standards compliant web application.
+Since our requirenments are fairly standard , a mix of openly supported 
+technologies will be employed:
 
-Server to Data Store communications will be handled trough standards SQL queries.
+\begin{itemize}
+\item \textbf{ Client to Server } requests and responses are HTTP.
+\\ A mix of POST and GET requests will be employed. 
+	\begin{itemize}
+		\item \textbf{POST} requests will be used for sensitive data such as "Username" and "Password" strings
+	to avoid leaving personally identifiable information behind in places
+	such as the browser's url history.
+		\item \textbf{GET} requests with parameters will be used in the "floor" and "room" lookup
+	requests. 
+	\end{itemize}
+
+\item \textbf{Server to Data Store } communications will be handled trough standards SQL queries.
 The underlying protocol will differ in our development and production servers
 as SQLite is easyer to use in a development eviorment (local api calls ). \\
 \\
 In an production enviroment however the standard MySql connection protocol will
-be used. As DjAngo and database driver itself abstracts the details away from 
-our implementation no further details will be discussed. \\
-
+be used.
+\end{itemize}
+Our chose framework , DjAngo supports all of these technologies and protocols
+natively. The protocols themselves are wildly popular and so we will not discuss
+them any further.
 
 
 \begin{tabular}{| p{4cm} | c |} \hline
