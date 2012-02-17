@@ -239,6 +239,9 @@ easy for the users to find what they're looking for.
 
 All the pages will have the basic layout of the \textbf{Home} page
 (Figure \ref{img:wireframes-home}), which consists of:
+\begin{center}
+\includegraphics[scale=0.35]{img/wireframes/home.pdf}
+\end{center}
 \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
 	\item{
 		\textbf{Header}
@@ -267,6 +270,11 @@ All the pages will have the basic layout of the \textbf{Home} page
 \end{itemize}
 
 
+\begin{center}
+\includegraphics[scale=0.35]{img/wireframes/results.pdf}
+\end{center}
+
+
 The pages \textbf{Results} and \textbf{Directory} share the same design (Figure 
 \ref{img:wireframes-results}): a list of all the levels, and for each one of 
 them, a list of rooms. If a query returns more than one result, this page is 
@@ -278,6 +286,10 @@ the levels are listed. Their elements are:
 	they're on}
 \end{enumerate}
 
+
+\begin{center}
+\includegraphics[scale=0.35]{img/wireframes/room.pdf}
+\end{center}
 
 The pages for \textbf{floors} are very similar to the ones for particular
 \textbf{rooms} (Fig. \ref{img:wireframes-room}), the only difference being that
@@ -297,6 +309,13 @@ displays the floor number. The structure of these pages:
 \section{Application Architecture}
 
 \subsection*{N-tier architecture}
+
+
+\begin{center}
+\includegraphics[scale=0.35]{img/ntier.pdf}
+\end{center}
+
+
 In order to separate data access, bussiness logic, and presentation from each
 other, we have broken our application into 3 logical tiers.
 
@@ -315,10 +334,13 @@ required information.
 
 \subsection*{ERD}
 
-\todo{The ERD} (Figure \ref{img:arch-erd}).
+We've decided to employ a simple object to table mapping scheme to facilitate
+CRUD (Create, Read, Update, Delete), operations on our data which fits in with 
+our framework MVC paradigm. 
 
-\todo{Tables}
-
+\begin{center}
+\includegraphics[scale=0.55]{img/erd.png}
+\end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TABLE -- The floor data model + structure of the floor database %%%
@@ -456,6 +478,10 @@ name & String & Name of the room \\
 
 
 \section{Message Passing}
+
+\begin{center}
+\includegraphics[scale=0.35]{img/dia.png}
+\end{center}
 
 (Figure \ref{img:diagram-sequence}):
 
