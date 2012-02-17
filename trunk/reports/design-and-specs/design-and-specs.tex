@@ -2,8 +2,9 @@
 \usepackage{url}
 \usepackage{color}
 \usepackage{graphics,graphicx}
+\usepackage{subfigure}
 
-%\usepackage{aeguill}
+\usepackage{aeguill}
 
 \usepackage{epsfig}
 \usepackage{epstopdf}
@@ -60,13 +61,11 @@ particular room.
 The application name is ``Where in the BOB'' and its purpose is to provide
 students, lecturers and visitors of University of Glasgow with an identifying
 system of rooms located in Boyd Orr Building. The application intends to
-offer a \todo{customize} interface to this facility where a particular user has
-the options to view from a floor plan perspective the location of a given room,
-to view details about the room searched and provide comments and ratings of
-the room in cause. \todo{Moreover, the application will offer details if the
-room or the floor is accessible or not.}
+offer an interface where a particular user has the options to view from a 
+floor plan perspective the location of a given room, to view details about 
+the room searched and provide comments and ratings of the room in cause. 
 
-The \todo{assumption}, in this case, is to build such a system based on the
+The objective, in this case, is to build such a system based on the
 provided floor plans of the building. Furthermore, the search facilities are
 restricted to a given number of most well know room names amongst students
 (e.g. Level 3 Computer Science lab) as well as their official names(e.g. Room
@@ -487,19 +486,8 @@ natively. The protocols themselves are wildly popular and so we will not discuss
 them any further.
 
 
-\begin{tabular}{| p{4cm} | c |} \hline
-
-Client->Server Login 		& Http POST 		\\ \hline
-Client->Server Request Floor 	& Http GET		\\ \hline
-Client->Server Request Room 	& Http Get		\\ \hline
-Server->DataStore Query 	& MySql Query		\\ \hline
-
-\end{tabular}	
-
-
-
 \section{Summary and Future Work}
-\begin{itemize}
+\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt
 \item	Summary of application and its current state.
 \item	A list or table of all the technologies, standards, and protocols that will be required.
 \item	A short description of the limitations imposed concerning development.
@@ -514,6 +502,7 @@ And our thanks to the peer reviewers for their feedback.
 \bibliography{sig-proc}
 
 \section{Appendix}
+\newpage
 \input{appendix}
 
 \end{document}
