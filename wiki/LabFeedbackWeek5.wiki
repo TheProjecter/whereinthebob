@@ -1,0 +1,26 @@
+#labels Feedback,Minutes
+= Awesome feedback minutes =
+
+== Assumptions == 
+
+assumptions regarding the users
+  *technical abilities: can use a browser   
+  *knowledge of the campus:minimal/lectures
+  *browser / technical: have computer , browser _means_
+  *dissabilities: can they see, can they hear
+  *internet connection ???
+  *language barrier: English ?
+  *functionality based on assumptions
+
+
+search  view
+leave feedback  / comments
+
+
+== Constraints ==
+  *time
+  *technical
+  *money : no ./ everything is open source
+  *floor plans: got them , not autocad
+
+why this way and not another .. blobs vs linked files
