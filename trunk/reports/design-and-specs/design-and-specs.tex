@@ -3,7 +3,7 @@
 \usepackage{color}
 \usepackage{graphics,graphicx}
 
-\usepackage{aeguill}
+%\usepackage{aeguill}
 
 \usepackage{epsfig}
 \usepackage{epstopdf}
@@ -434,9 +434,35 @@ name & String & Name of the room \\
 
 \section{Message Passing}
 
-\todo{Sequence diagram}
+(Figure \ref{img:diagram-sequence}):
 
-\todo{Messages, lol}
+Client to Server requests are standard HTTP requests. \\
+POST will be used for sensitive data such as "Username" and "Password" strings
+to avoid leaving personally identifiable information behind in places
+such as the browser's url history.\\
+\\
+GET requests with parameters will be used in the "floor" and "room" lookup
+requests. \\
+
+Server to Data Store communications will be handled trough standards SQL queries.
+The underlying protocol will differ in our development and production servers
+as SQLite is easyer to use in a development eviorment (local api calls ). \\
+\\
+In an production enviroment however the standard MySql connection protocol will
+be used. As DjAngo and database driver itself abstracts the details away from 
+our implementation no further details will be discussed. \\
+
+
+
+\begin{tabular}{| p{4cm} | c |} \hline
+
+Client->Server Login 		& Http POST 		\\ \hline
+Client->Server Request Floor 	& Http GET		\\ \hline
+Client->Server Request Room 	& Http Get		\\ \hline
+Server->DataStore Query 	& MySql Query		\\ \hline
+
+\end{tabular}	
+
 
 
 \section{Summary and Future Work}
