@@ -50,7 +50,7 @@ find the location of a room in the Boyd Orr Building.
 
 The application aims to provide a room search interface to the user.
 Results are returned along with a relevant floor plan highlighted to
-indicate the particular room.
+indicate that room.
 
 Our interface also provides relevant lists of room names in case of an ambiguous 
 identifier being passed as a query and the ability comment on a particular room. 
@@ -62,8 +62,8 @@ identifier being passed as a query and the ability comment on a particular room.
 The application name is ``Where in the BOB'' and its purpose is to provide
 students, lecturers and visitors of University of Glasgow with an identifying
 system of rooms located in Boyd Orr Building. The application intends to
-offer an interface where a particular user has the options to view a particular 
-room from a floor plan perspective, to view details pertaining to that room and 
+offer an interface where a user has the option to view a particular 
+room from a floor plan perspective, to view details pertaining to that room, and 
 leave comments or ratings for it.
 
 The objective, in this case, is to build such a system based on existing 
@@ -236,8 +236,8 @@ pointer behaviours than, say, a desktop PC with a mouse.
 We have tried to design a user interface that is very intuitive, making it
 easy for the users to find what they're looking for.
 
-All the pages will have the basic layout of the \textbf{Home} page
-(Figure \ref{img:wireframes-home}), which consists of:
+All the pages will have the basic layout of the \textbf{Home} page, which
+consists of:
 \begin{center}
 \includegraphics[scale=0.55]{img/wireframes/home2.png}
 \end{center}
@@ -274,8 +274,8 @@ All the pages will have the basic layout of the \textbf{Home} page
 \end{center}
 
 
-The pages \textbf{Results} and \textbf{Directory} share the same design (Figure 
-\ref{img:wireframes-results}): a list of all the levels, and for each one of 
+The pages \textbf{Results} and \textbf{Directory} share the same design:
+a list of all the levels, and for each one of 
 them, a list of rooms. If a query returns more than one result, this page is 
 shown with the list of matching rooms. In the case of the Directory page, all 
 the levels are listed. Their elements are:
@@ -291,7 +291,7 @@ the levels are listed. Their elements are:
 \end{center}
 
 The pages for \textbf{floors} are very similar to the ones for particular
-\textbf{rooms} (Fig. \ref{img:wireframes-room}), the only difference being that
+\textbf{rooms}, the only difference being that
 instead of the breadcrumbs that appear on the room page, the floor page only 
 displays the floor number. The structure of these pages:
 \begin{enumerate} \itemsep1pt \parskip0pt \parsep0pt
@@ -303,6 +303,10 @@ displays the floor number. The structure of these pages:
 	\texttt{Submit} button.}
 	\item{\textbf{Comments} - previous comments (text + date posted)}
 \end{enumerate}
+
+\subsection*{Technologies}
+The client interface uses standard compliant \texttt{HTML} and \texttt{CSS} to
+structure and present the information. 
 
 
 \section{Application Architecture}
@@ -479,8 +483,6 @@ name & String & Name of the room \\
 \section{Message Passing}
 
 
-(Figure \ref{img:diagram-sequence}):
-
 WhereInTheBob is a fully standards compliant web application.
 Since our requirenments are fairly standard , a mix of openly supported 
 technologies will be employed:
@@ -489,11 +491,12 @@ technologies will be employed:
 \item \textbf{ Client to Server } requests and responses are HTTP.
 \\ A mix of POST and GET requests will be employed. 
 	\begin{itemize}
-		\item \textbf{POST} requests will be used for sensitive data such as "Username" and "Password" strings
-	to avoid leaving personally identifiable information behind in places
-	such as the browser's url history.
-		\item \textbf{GET} requests with parameters will be used in the "floor" and "room" lookup
-	requests. 
+		\item \textbf{POST} requests will be used for sensitive data such as 
+		``Username'' and ``Password'' strings
+		to avoid leaving personally identifiable information behind in places
+		such as the browser's url history.
+		\item \textbf{GET} requests with parameters will be used in the
+		``floor'' and ``room'' lookup requests. 
 	\end{itemize}
 
 \item \textbf{Server to Data Store } communications will be handled trough standards SQL queries.
@@ -503,7 +506,7 @@ as SQLite is easier to use in a development environment (local api calls ). \\
 In an production environment however the standard MySql connection protocol will
 be used.
 \end{itemize}
-Our chose framework , DjAngo supports all of these technologies and protocols
+Our chosen framework, Django supports all of these technologies and protocols
 natively. The protocols themselves are wildly popular and so we will not discuss
 them any further.
 
@@ -513,15 +516,13 @@ them any further.
 
 \section{Summary and Future Work}
 \begin{itemize}\itemsep1pt \parskip0pt \parsep0pt
-\item	Summary of application and its current state.
-\item	A list or table of all the technologies, standards, and protocols that will be required.
-\item	A short description of the limitations imposed concerning development.
-\item   A summary of future development.
+	\item Extend the database to support the rest of the University's campus;
+	\item The system could also be used in libraries, supermarkets, and other
+	public locations.
 \end{itemize}
 
 \section{Acknowledgements}
-Our thanks to the lecturers and demonstrators for their comments and suggestions. 
-And our thanks to the peer reviewers for their feedback. 
+Our thanks to the lecturers and demonstrators for their comments and suggestions.
 
 \bibliographystyle{abbrv}
 \bibliography{sig-proc}
