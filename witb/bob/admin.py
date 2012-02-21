@@ -1,21 +1,26 @@
 from bob.models import *
 from django.contrib import admin
+from django.contrib.contenttypes import generic
+
+class CommentInline(generic.GenericTabularInline):
+	model = Comment
 
 class FloorAdmin(admin.ModelAdmin):
 	readonly_fields = ['date_created', 'date_updated', 'rating']
 	fields =  ['description', 'level', 'date_created', 'date_updated', 'rating']
-	list_display = ( 'description', 'level', 'date_created', 'date_updated', 'rating')
+	list_display = ( 'description', 'level', 'date_created', 'date_updated', 'rating','floor_id')
 	list_filter = ['date_created']
+	inlines = [ CommentInline,]
 
 class CommentAdmin(admin.ModelAdmin):
 	readonly_fields = ['date_created', 'date_updated']
-	fields = [ 'comment' , 'date_created','date_updated']
-	list_display = ('comment_id' , 'comment' , 'guid' , 'date_created','date_updated')
+	fields = [ 'comment' , 'date_created','date_updated','content_type','object_id']
+	list_display = ('comment_id' , 'comment'  , 'date_created','date_updated')
 
 class RoomAdmin(admin.ModelAdmin):
 	readonly_fields = ['rating']
 	fields = [ 'floor_id','type_id', 'description','rating']
-	list_display = ('room_id','floor_id','type_id','description','rating')
+	list_display = ('room_id','floor_id','type_id','description','rating','room_id')
 	list_filter = ['floor_id']
 
 class RoomNameAdmin(admin.ModelAdmin):
