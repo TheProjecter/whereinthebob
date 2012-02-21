@@ -1,5 +1,4 @@
-from bob.models import Floor
-from bob.models import Comment
+from bob.models import *
 from django.contrib import admin
 
 class FloorAdmin(admin.ModelAdmin):
@@ -12,3 +11,6 @@ class CommentAdmin(admin.ModelAdmin):
 	
 admin.site.register(Floor, FloorAdmin)
 admin.site.register( Comment, CommentAdmin)
+admin.site.register(Room)
+admin.site.register(Room_Name)
+admin.site.register(Room_Type)
