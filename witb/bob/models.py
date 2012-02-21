@@ -22,22 +22,22 @@ class Comment(models.Model):
 		return "ID#" + str(self.comment_id) + ", date_created=" + str(self.date_created) + ", guid=" +str(self.guid)
       
 class Room(models.Model):
-    room_id = models.IntegerField(primary_key=True)
-    floor_id = models.ForeignKey('Floor');
-    type_id = models.ForeignKey('Room_Type')
-    description = models.CharField(max_length=200)
-    rating = models.IntegerField(default=0, null=True)
-    #guid    
+	room_id = models.IntegerField(primary_key=True)
+    	floor_id = models.ForeignKey('Floor');
+    	type_id = models.ForeignKey('Room_Type')
+    	description = models.CharField(max_length=200)
+    	rating = models.IntegerField(default=0, null=True)
+    	#guid    
 
-    def __unicode__(self):
-        return "ID#" + str(self.room_id)+ ", floor_id=" + str(self.floor_id) + ", room_name=" + str(self.room_name) + ", type_id=" + str(self.type_id)
+    	def __unicode__(self):
+        	return "ID#" + str(self.room_id)+ ", floor_id=" + str(self.floor_id) + ", room_name=" + str(self.room_name) + ", type_id=" + str(self.type_id)
     
     
 class Room_Type(models.Model):
-    type_id = models.IntegerField(primary_key=True)
-    type_name = models.CharField(max_length=100) 
+    	type_id = models.IntegerField(primary_key=True)
+    	type_name = models.CharField(max_length=100) 
 
 
 class Room_Name(models.Model):
-    room_id = models.ForeignKey('Room')
-    name = models.CharField(max_length=50);
+    	room_id = models.ForeignKey('Room')
+    	name = models.CharField(max_length=50);
