@@ -46,7 +46,7 @@ class Room(models.Model):
 			super(Room, self).save()
 
     	def __unicode__(self):
-        	return "ID#" + str(self.room_id)+ ", floor_id=" + str(self.floor_id) + ", type_id=" + str(self.type_id)
+        	return str(self.room_id)
 
     
 class Room_Type(models.Model):
@@ -54,7 +54,7 @@ class Room_Type(models.Model):
     	type_name = models.CharField(max_length=100) 
 
 	def __unicode__(self):
-		return "type_id=" + str(self.type_id) + ", type_name=" + str(self.type_name)
+		return str(self.type_id)
 
 class Room_Name(models.Model):
     	room_id = models.ForeignKey('Room')
@@ -62,8 +62,4 @@ class Room_Name(models.Model):
     	
 	def __unicode__(self):
 		return "room_id=" + str(self.room_id) + ", name=" + str(self.name)
-		
-#	def __unicode__(self):
-#    		return str(self.room_id)
-	
-	list_filter = ['room_id']
+			
