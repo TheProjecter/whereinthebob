@@ -1,34 +1,12 @@
 from django.db import models
 
-# Create your models here.
-
 class Floor(models.Model):
-	floor_id int
-	description str
-	date_created date
-	date_updated date
-	level int
-	rating int
-	guid int
+	floor_id = models.IntegerField(primary_key=True)
+	description = models.CharField(max_length=200)
+	date_created = models.DateTimeField(editable=False)
+	date_updated = models.DateTimeField(null=True)
+	level = models.IntegerField()
+	rating = models.IntegerField(default=0, null=True)
 
-class Room(models.Model):
-	room_id int
-	floor_id int
-	room_name str
-	type int
-	description str
-	rating int
-	guid int
-
-class Room_Type(models.Model):
-	type_id int
-	type str
-
-class Room_Name(models.Model):
-	room_id int
-	name str
-
-class Comment(models.Model):
-	guid int
-	comment str
-	date date
+	def __unicode__(self):
+		return "ID#" + str(self.floor_id)+ ", date_created=" + str(self.date_created) + ", level=" + str(self.level) + ", rating=" + str(self.rating)
