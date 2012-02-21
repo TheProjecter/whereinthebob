@@ -18,6 +18,6 @@ class Comment(models.Model):
 	date_created = models.DateTimeField(editable=False,auto_now_add=True)
 	date_updated = models.DateTimeField(null=True,editable=False, auto_now=True)
 	
-	def __unicode__(self)
+	def __unicode__(self):
 		return "ID#" + str(self.comment_id) + ", date_created=" + str(self.date_created) + ", guid=" +str(self.guid)
 
