@@ -7,7 +7,7 @@ class FloorAdmin(admin.ModelAdmin):
 
 class CommentAdmin(admin.ModelAdmin):
 	readonly_fields = ['date_created', 'date_updated']
-	fields = ['comment_id' , 'comment' , 'guid' , 'date_created','date_updated']
+	fields = [ 'comment' , 'date_created','date_updated']
 
 class RoomAdmin(admin.ModelAdmin):
 	readonly_fields = ['rating']
