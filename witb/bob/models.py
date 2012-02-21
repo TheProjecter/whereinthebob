@@ -13,7 +13,7 @@ class Floor(models.Model):
 
 class Comment(models.Model):
 	comment_id = models.IntegerField(primary_key=True)
-	guid = models.CharField(max_length=360)
+	guid = models.CharField(max_length=36)
 	comment = models.CharField(max_length=1024)
 	date_created = models.DateTimeField(editable=False,auto_now_add=True)
 	date_updated = models.DateTimeField(null=True,editable=False, auto_now=True)
@@ -24,6 +24,7 @@ class Comment(models.Model):
 	def getByGuid(self,gid):
 		result =  Comment.objects.filter(guid=gid)
 		return result
+
 	      
 class Room(models.Model):
 	room_id = models.IntegerField(primary_key=True)
