@@ -1,7 +1,7 @@
 from django.db import models
 import uuid
 class Floor(models.Model):
-	floor_id = models.IntegerField(primary_key=True)
+	floor_id = models.AutoField(primary_key=True)
 	description = models.CharField(max_length=200)
 	date_created = models.DateTimeField(editable=False, auto_now_add=True)
 	date_updated = models.DateTimeField(null=True, editable=False, auto_now=True)
@@ -34,7 +34,7 @@ class Comment(models.Model):
 
 	      
 class Room(models.Model):
-	room_id = models.IntegerField(primary_key=True)
+	room_id = models.AutoField(primary_key=True)
     	floor_id = models.ForeignKey('Floor');
     	type_id = models.ForeignKey('Room_Type')
     	description = models.CharField(max_length=200)

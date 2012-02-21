@@ -3,9 +3,9 @@ from django.contrib import admin
 
 class FloorAdmin(admin.ModelAdmin):
 	readonly_fields = ['date_created', 'date_updated', 'rating']
-	fields = ['floor_id', 'description', 'level', 'date_created', 'date_updated', 'rating']
-	list_display = ('floor_id', 'description', 'level', 'date_created', 'date_updated', 'rating')
-	list_filter = ['floor_id']
+	fields =  ['description', 'level', 'date_created', 'date_updated', 'rating']
+	list_display = ( 'description', 'level', 'date_created', 'date_updated', 'rating')
+	list_filter = ['date_created']
 
 class CommentAdmin(admin.ModelAdmin):
 	readonly_fields = ['date_created', 'date_updated']
@@ -14,9 +14,9 @@ class CommentAdmin(admin.ModelAdmin):
 
 class RoomAdmin(admin.ModelAdmin):
 	readonly_fields = ['rating']
-	fields = ['room_id' ,'floor_id','type_id', 'description','rating']
+	fields = [ 'floor_id','type_id', 'description','rating']
 	list_display = ('room_id','floor_id','type_id','description','rating')
-	list_filter = ['room_id']
+	list_filter = ['floor_id']
 
 class RoomNameAdmin(admin.ModelAdmin):
 	fields = ['room_id', 'name']
