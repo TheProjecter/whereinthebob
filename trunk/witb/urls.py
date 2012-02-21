@@ -5,6 +5,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
+     url(r'^comments/$', 'polls.views.index'),
     # Examples:
     # url(r'^$', 'witb.views.home', name='home'),
     # url(r'^witb/', include('witb.foo.urls')),
