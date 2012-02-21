@@ -11,7 +11,7 @@ class CommentAdmin(admin.ModelAdmin):
 
 class RoomAdmin(admin.ModelAdmin):
 	readonly_fields = ['rating']
-	fields = ['room_id' ,'floor_id', 'type_id', 'description','rating']
+	fields = ['room_id' ,'floor_id','type_id', 'description','rating']
 	
 admin.site.register(Floor, FloorAdmin)
 admin.site.register(Comment, CommentAdmin)

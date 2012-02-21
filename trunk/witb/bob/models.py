@@ -33,14 +33,19 @@ class Room(models.Model):
     	#guid    
 
     	def __unicode__(self):
-        	return "ID#" + str(self.room_id)+ ", floor_id=" + str(self.floor_id) + ", room_name=" + str(self.room_name) + ", type_id=" + str(self.type_id)
+        	return "ID#" + str(self.room_id)+ ", floor_id=" + str(self.floor_id) + ", type_id=" + str(self.type_id)
     
     
 class Room_Type(models.Model):
     	type_id = models.IntegerField(primary_key=True)
     	type_name = models.CharField(max_length=100) 
 
+	def __unicode__(self):
+		return "type_id=" + str(self.type_id) + ", type_name=" + str(self.type_name)
 
 class Room_Name(models.Model):
     	room_id = models.ForeignKey('Room')
     	name = models.CharField(max_length=50);
+    	
+	def __unicode__(self):
+		return "room_id=" + str(self.room_id) + ", name=" + str(self.name)
