@@ -15,6 +15,26 @@
         padding-top: 60px;
         padding-bottom: 40px;
       }
+
+      #header{
+        text-align:center;
+      }
+
+      .tagline{
+        margin-top:2%;
+        margin-left:26%;
+      }
+      .tagline p{
+        text-align:left;
+      }
+
+      footer{
+        text-align:center;
+      }
+      footer p{
+        font-size:1.2em;
+      }
+
     </style>
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -28,18 +48,32 @@
     <div class="container">
 
       <div class="row">
-        <div class="well span6 offset3">
-          <h1>Heading</h1>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        <div id="header" class="well span6 offset3">
+          <h1>Where in the BOB?</h1>
+          <div class="tagline">
+           <p>Can't find a tutorial room? <br />
+           Don't know where Room 420 is?</p>
+           <p>There's an app for that!</a>
+          </div>
+
+           <p>
+            <form class="form-horizontal">
+              <input type="text">
+              <a class="btn btn-primary">Search!</a>
+            </form>
+           </p>
         </div>
       </div>
 
       <div class="row">
-        <div class="well span6 offset3">
-          <footer>
-            <p>&copy; Company 2012</p>
+          <footer class="well span6 offset3">
+            <p>
+              <a href="#">About</a> | 
+              <a href="#">GU Campus</a> |
+              <a href="#">Rooms and floors directory</a> |
+              <a href="#">Feedback</a>
+            </p>
           </footer>
-        </div>
       </div>
 
     </div> <!-- /container -->
