@@ -10,26 +10,23 @@ class Floor(models.Model):
 	date_updated = models.DateTimeField(null=True, editable=False, auto_now=True)
 	level = models.IntegerField()
 	rating = models.IntegerField(default=0, null=True)
-	guid = models.CharField(max_length=36)
 
 	#vodoo
-	#comments = generic.GenericRelation(Comment)
+	comments = generic.GenericRelation('Comment')
 	#end vodoo
+
 	def __unicode__(self):
 		return "ID#" + str(self.floor_id)+ ", date_created=" + str(self.date_created) + ", level=" + str(self.level) + ", rating=" + str(self.rating)
 
-	def save(self):
-		if not self.guid:
-			self.guid=uuid.uuid4()
-			super(Floor, self).save()
+
 
 class Comment(models.Model):
 	comment_id = models.AutoField(primary_key=True)
 
 	#voodo magic
 	content_type = models.ForeignKey(ContentType)
-	object_id = models.CharField(max_length=36)
-	guid = generic.GenericForeignKey('content_type', 'guid')
+	object_id = models.PositiveIntegerField()
+	content_object = generic.GenericForeignKey('content_type', 'object_id')
 	#end vodoo
 
 	comment = models.CharField(max_length=1024)
@@ -37,7 +34,7 @@ class Comment(models.Model):
 	date_updated = models.DateTimeField(null=True,editable=False, auto_now=True)
 	
 	def __unicode__(self):
-		return "ID#" + str(self.comment_id) + ", date_created=" + str(self.date_created) + ", guid=" +str(self.guid)
+		return "ID#" + str(self.comment_id) + ", date_created=" + str(self.date_created) 
 					
 	def getByGuid(self,gid):
 		result =  Comment.objects.filter(guid=gid)
@@ -51,14 +48,10 @@ class Room(models.Model):
     	type_id = models.ForeignKey('Room_Type')
     	description = models.CharField(max_length=200)
     	rating = models.IntegerField(default=0, null=True)
-	guid = models.CharField(max_length=36)
+	
 	#vodoo
 	#comments = generic.GenericRelation(Comment)
 	#end vodoo
-	def save(self):
-		if not self.guid:
-			self.guid=uuid.uuid4()
-			super(Room, self).save()
 
     	def __unicode__(self):
         	return str(self.room_id)
