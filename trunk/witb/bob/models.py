@@ -20,7 +20,10 @@ class Comment(models.Model):
 	
 	def __unicode__(self):
 		return "ID#" + str(self.comment_id) + ", date_created=" + str(self.date_created) + ", guid=" +str(self.guid)
-      
+	def getByGuid(self,gid):
+		result =  Comment.objects.filter(guid=gid)
+		return result
+	      
 class Room(models.Model):
 	room_id = models.IntegerField(primary_key=True)
     	floor_id = models.ForeignKey('Floor');
