@@ -20,6 +20,7 @@ class Comment(models.Model):
 	
 	def __unicode__(self):
 		return "ID#" + str(self.comment_id) + ", date_created=" + str(self.date_created) + ", guid=" +str(self.guid)
+					
 	def getByGuid(self,gid):
 		result =  Comment.objects.filter(guid=gid)
 		return result
@@ -34,7 +35,7 @@ class Room(models.Model):
 
     	def __unicode__(self):
         	return "ID#" + str(self.room_id)+ ", floor_id=" + str(self.floor_id) + ", type_id=" + str(self.type_id)
-    
+
     
 class Room_Type(models.Model):
     	type_id = models.IntegerField(primary_key=True)
@@ -49,3 +50,8 @@ class Room_Name(models.Model):
     	
 	def __unicode__(self):
 		return "room_id=" + str(self.room_id) + ", name=" + str(self.name)
+		
+#	def __unicode__(self):
+#    		return str(self.room_id)
+	
+	list_filter = ['room_id']
