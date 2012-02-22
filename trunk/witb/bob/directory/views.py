@@ -3,11 +3,10 @@ from django.http import HttpResponse
 
 
 def index(request):
-    t = loader.get_template('layout.html')
+    t = loader.get_template('listing.html')
     c = Context({
         'title': 'Directory of rooms and floors',
-        'home' : False,
-        'content' : 'listing.html'
+        'home' : False
     })
     return HttpResponse(t.render(c))
     
