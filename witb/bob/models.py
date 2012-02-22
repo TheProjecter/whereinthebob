@@ -16,7 +16,7 @@ class Floor(models.Model):
 	#end vodoo
 
 	def __unicode__(self):
-		return "ID#" + str(self.floor_id)+ ", date_created=" + str(self.date_created) + ", level=" + str(self.level) + ", rating=" + str(self.rating)
+		return str(self.floor_id)
 
 
 
