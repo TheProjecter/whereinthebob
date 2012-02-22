@@ -3,12 +3,12 @@
         <div class="well span6 offset3">
           <ul class="breadcrumb">
             <li>
-              <a href="#">Floor {{ room.floor_id }}</a>
+              <a href="/floor/{{ room.floor_id }}">Floor {{ room.floor_id }}</a>
               {% if title == "Room" %}
               <span class="divider">/</span>
             </li>
             <li>
-              <a href="#">Room {{ room.room_id }}</a>
+              <a href="/room/{{ room.room_id }}">Room {{ room.room_id }}</a>
               {% endif %}
             </li>
           </ul>
