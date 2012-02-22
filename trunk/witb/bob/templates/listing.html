@@ -1,24 +1,19 @@
 {% extends "layout.html" %}
 {% block content %}
         <div class="well span6 offset3">
+          {% if "Directory" not in title %}
           <h2>Results for "<em>query</em>"</h2>
+          {% else %}
+          <h2>Directory of floors and rooms</h2>
+          {% endif %}
           
+          {% for floor in floors %}
           <div class="level-group">
-            <h3>Level 4</h3>
+            <h3><a href="/floor/{{ floor.floor_id }}">Level {{ floor.floor_id }}</a></h3>
             <ul>
-              <li>Room 421</li>
-              <li>Room 421</li>
               <li>Room 421</li>
             </ul>
           </div>
-          
-          <div class="level-group">
-            <h3>Level 4</h3>
-            <ul>
-              <li>Room 421</li>
-              <li>Room 421</li>
-              <li>Room 421</li>
-            </ul>
-          </div>
+          {% endfor %}
         </div>
 {% endblock %}
