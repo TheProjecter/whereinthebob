@@ -68,42 +68,7 @@
 
       {% if not home %}
       <div class="row">
-        <div class="well span6 offset3">
-          <ul class="breadcrumb">
-            <li>
-              <a href="#">Level 4</a> <span class="divider">/</span>
-            </li>
-            <li>
-              <a href="#">Room 420</a>
-            </li>
-          </ul>
-          
-          <!-- remove borders, backgrounds -->
-          <ul class="thumbnails">
-            <li class="span6">
-              <a href="#" class="thumbnail">
-                <img src="http://placehold.it/560x412" alt="">
-              </a>
-            </li>
-          </ul>
-
-          <div id="comments" class="span6" style="margin-left:0px;">
-
-            <div class="post">
-              <p>Post something on this floor's wall!</p>
-              <form class="form-horizontal">
-                <textarea style="max-width:80%; width:80%;"></textarea>
-                <a style="width:10%;" class="pull-right btn btn-primary">Post!</a>
-              </form>
-            </div>
-
-            <div class="comment well">
-            </div>
-
-          </div>
-
-
-        </div>
+        {% include content %}
       </div>
       {% endif %}
 
