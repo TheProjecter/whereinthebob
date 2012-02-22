@@ -8,6 +8,8 @@ admin.autodiscover()
 urlpatterns = patterns('',
      url(r'^comments/$', 'witb.bob.comments.views.index'),
     url(r'^$', 'witb.bob.views.index'),
+    url(r'^directory/$', 'witb.bob.directory.views.index'),
+    url(r'^room/$', 'witb.bob.room.views.index'),
     # Examples:
     # url(r'^$', 'witb.views.home', name='home'),
     # url(r'^witb/', include('witb.foo.urls')),
