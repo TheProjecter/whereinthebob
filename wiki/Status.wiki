@@ -1,7 +1,7 @@
 #summary current status of the project and quicklinks
 
 == Status ==
-*AndreiM*: We've got [Wireframes]. We've got some [Database Architecture] (still needs some more content for the *N-tier architecture*).
+22 Feb *AndreiM*: All the (basic) templates for each view have been created (and work!).
 
 == Usefulness ==
    * [Tools]
