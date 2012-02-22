@@ -22,6 +22,7 @@ class RoomAdmin(admin.ModelAdmin):
 	fields = [ 'floor_id','type_id', 'description','rating']
 	list_display = ('room_id','floor_id','type_id','description','rating','room_id')
 	list_filter = ['floor_id']
+	inlines = [ CommentInline,]
 
 class RoomNameAdmin(admin.ModelAdmin):
 	fields = ['room_id', 'name']

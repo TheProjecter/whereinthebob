@@ -50,7 +50,7 @@ class Room(models.Model):
     	rating = models.IntegerField(default=0, null=True)
 	
 	#vodoo
-	#comments = generic.GenericRelation(Comment)
+	comments = generic.GenericRelation('Comment')
 	#end vodoo
 
     	def __unicode__(self):
