@@ -3,10 +3,10 @@
         <div class="well span6 offset3">
           <ul class="breadcrumb">
             <li>
-              <a href="#">Level 4</a> <span class="divider">/</span>
+              <a href="#">Level {{ room.floor_id }}</a> <span class="divider">/</span>
             </li>
             <li>
-              <a href="#">Room 420</a>
+              <a href="#">Room {{ room.room_id }}</a>
             </li>
           </ul>
           
@@ -14,7 +14,7 @@
           <ul class="thumbnails">
             <li class="span6">
               <a href="#" class="thumbnail">
-                <img src="http://placehold.it/560x412" alt="">
+                <img src="http://placehold.it/560x412&text=Room%20{{ room.room_id }}" alt="">
               </a>
             </li>
           </ul>
@@ -29,8 +29,13 @@
               </form>
             </div>
 
+            {% for comment in comments %}
             <div class="comment well">
+              Comm# {{ comment.comment_id }}<br />
+              {{ comment.comment }}
+              {{ comment.date_created }}
             </div>
+            {% endfor %}
 
           </div>
 
