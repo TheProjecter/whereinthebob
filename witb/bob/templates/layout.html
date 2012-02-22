@@ -68,7 +68,7 @@
 
       {% if not home %}
       <div class="row">
-        {% include content %}
+        {% block content %}{% endblock %}
       </div>
       {% endif %}
 
