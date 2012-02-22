@@ -3,7 +3,7 @@
         <div class="well span6 offset3">
           <ul class="breadcrumb">
             <li>
-              <a href="#">Level {{ room.floor_id }}</a>
+              <a href="#">Floor {{ room.floor_id }}</a>
               {% if title == "Room" %}
               <span class="divider">/</span>
             </li>
@@ -25,7 +25,7 @@
           <div id="comments" class="span6" style="margin-left:0px;">
 
             <div class="post">
-              <p>Post something on this floor's wall!</p>
+              <p>Post something on this {{ title|lower }}'s wall!</p>
               <form class="form-horizontal">
                 <textarea style="max-width:80%; width:80%;"></textarea>
                 <a style="width:10%;" class="pull-right btn btn-primary">Post!</a>
