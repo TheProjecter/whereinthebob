@@ -1,4 +1,5 @@
 from django.conf.urls.defaults import patterns, include, url
+from django.views.generic.simple import direct_to_template
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -6,6 +7,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
      url(r'^comments/$', 'witb.bob.comments.views.index'),
+    url(r'^$', 'witb.bob.views.index'),
     # Examples:
     # url(r'^$', 'witb.views.home', name='home'),
     # url(r'^witb/', include('witb.foo.urls')),
