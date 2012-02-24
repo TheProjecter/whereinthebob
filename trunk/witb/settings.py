@@ -1,6 +1,6 @@
 # Django settings for witb project.
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -56,7 +56,7 @@ MEDIA_URL = ''
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
-STATIC_ROOT = ''
+STATIC_ROOT = '/users/level3/0907390m/workspace/school/dim3/whereinthebob/witb/bob/static'
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
