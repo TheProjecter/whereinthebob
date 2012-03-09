@@ -342,7 +342,7 @@ required information.
 
 \subsection*{ERD}
 
-We've decided to employ a simple object to table mapping scheme to facilitate
+We have decided to employ a simple object to table mapping scheme to facilitate
 CRUD (Create, Read, Update, Delete), operations on our data which fits in with 
 our framework MVC paradigm. 
 
@@ -480,10 +480,27 @@ name & String & Name of the room \\
 \end{tabular}	
 %\caption{\small{Room\_Name data model}}}
 %\end{table}
-
+\\
+\\
+\\
+A room is associated with a Room\_Type. The assumption is that each room
+has one intitled purpose and only one (i.e a lab is not a toilet nor a kitchen).
+The relation between the Room and the Room\_Name is one to many mainly 
+because this is the assumption we made in order to meed the requirements
+stated in the first part of this document. A room will be uniquely identified 
+by the Room\_ID, but it occur several times in our database with different 
+names.\\
+\\
+The floor will contain a set of comments which is initialized every time when 
+you visit the floor plan with the collection of comments for each room. The 
+room object can have 0 or multiple objects . These will be added by users after 
+a search has been completed. The main idea is for user to identify the room, 
+then insert comments on that particular room.\\
+\\
+The floor, in terms of components, will be a set of room instances. A floor 
+can have 0 or more rooms, where as a room must be part of the floor object.\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \section{Message Passing}
 
