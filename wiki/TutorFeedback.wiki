@@ -23,5 +23,5 @@
 
 --------------------------------------------------------------------------------------
 
-1. done at the bottom of aim of the application section
-2. redone the goals section. Re
+   # done at the bottom of aim of the application section
+   # redone the goals section. Reordered the ideas and added new ones.
