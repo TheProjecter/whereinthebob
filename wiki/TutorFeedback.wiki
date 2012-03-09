@@ -7,7 +7,7 @@
 == Week 7 ==
 
 === On the Design and Specs report ===
-   * what happens when there's no results from search?
+   * ~~what happens when there's no results from search?~~
    * more details on Goals
    * where would the floor plans be stored? (not in the DB)
    * where is the browse option?
@@ -20,3 +20,7 @@
    * ERD: explain each entity
    * Seq diagram: paragraph explaining the messages
    * Seq diagram: one more layer for the user; make the requests from the user clearer, e.g.: this is _search_, this is _login_, etc.
+
+--------------------------------------------------------------------------------------
+
+1. done at the bottom of aim of the application section
