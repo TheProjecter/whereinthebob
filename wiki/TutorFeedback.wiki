@@ -10,7 +10,7 @@
    * ~~what happens when there's no results from search?~~
    * ~~more details on Goals~~
    * where would the floor plans be stored? (not in the DB)
-   * where is the browse option?
+   * ~~where is the browse option?~~
    * sort results
    * floor plan doesn't look like a floor plan (in the wireframes)
    * MOAR funnies
@@ -27,3 +27,4 @@
    # redone the goals section. Reordered the ideas and added new ones.
    # cardinality now explained for each object in the diagram
    # added entity description
+   # the browse option was already there
