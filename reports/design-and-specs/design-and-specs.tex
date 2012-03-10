@@ -482,7 +482,20 @@ name & String & Name of the room \\
 %\end{table}
 \\
 \\
+\subsubsection{Entity description}
+The Floor entity has the purpose to identify the rest of the entities through 
+a correlated set of floors and moreover, comments on these floors.\\
 \\
+The Room\_Name and the Room\_Type objects map the registered names and type 
+of each room in database. The purpose of these table is to minimize the 
+redundancy and dependency in the Room table. Having a normalized relational 
+database table was our main concern in increasing the performance and efficiency 
+of our application.\\
+\\
+The Comment entity mainly stores the users inputs for each floor and room and 
+maps these instances to each of the mentioned objects.
+
+
 \subsubsection{Cardinality}
 A room is associated with a Room\_Type. The assumption is that each room
 has one intitled purpose and only one (i.e a lab is not a toilet nor a kitchen).
