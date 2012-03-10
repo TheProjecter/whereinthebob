@@ -13,7 +13,7 @@
    * ~~where is the browse option?~~
    * sort results
    * floor plan doesn't look like a floor plan (in the wireframes)
-   * MOAR funnies
+   * ~~MoAR funnies~~
    * separate the layers in the n-tier
    * backend DB?
    * ~~ERD: explain 1 to M for room names~~
