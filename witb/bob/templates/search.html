@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+		<head>
+		    <title>Search{% if query %} Results{% endif %}</title>
+		</head>
+
+        <div class="well span6 offset3">
+          <ul class="breadcrumb">
+            <li>
+              <p>Search Results</p>
+            </li>
+          </ul>
+          
+
+          <div id="search_results" class="span6" style="margin-left:0px;">
+
+            {% if query_results %}
+			{% for result in query_results %}
+			<ul>
+        		<li><a href="/room/{{ result }}"> {{ result }} </a></li>
+		    </ul>
+			{% endfor %}
+			{% else %}
+		    <p>No match is found.</p>
+			{% endif %}
+
+
+          </div>
+
+
+        </div>
+{% endblock %}

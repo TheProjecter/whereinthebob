@@ -58,9 +58,9 @@
           </div>
 
            <p>
-            <form class="form-horizontal">
-              <input type="text">
-              <a class="btn btn-primary">Search!</a>
+            <form class="form-horizontal" action="/search/" method="get">{% csrf_token %}
+              <input name="search_string" type="text">
+              <input class="btn btn-primary" type="submit" value="Search!"></>
             </form>
            </p>
         </div>
