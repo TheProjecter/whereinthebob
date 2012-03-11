@@ -17,7 +17,7 @@ def index(request):
 	if ('search_string' in request.GET) and request.GET['search_string'].strip():
 		search_string = request.GET['search_string']
 		query_string = get_query(search_string, ['type_id__type_name', 'description', 'room_id', 'room_name__name'])
-		query_results = Room.objects.filter(query_string).order_by('rating')
+		query_results = Room.objects.filter(query_string).order_by('rating').distinct()
 
 	c = Context({
 		'title': 'Search',
