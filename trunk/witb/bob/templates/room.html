@@ -1,10 +1,16 @@
 {% extends "layout.html" %}
 {% block content %}
+{% load comments %}
+{% get_comment_count for room as comment_count %}.
         <script src="{{ STATIC_PREFIX }}js/raphael-min.js" type="text/javascript" charset="utf-8"></script>
         <script src="{{ STATIC_PREFIX }}js/paths-level{{ room.floor_id }}.js" type="text/javascript" charset="utf-8"></script>
         <script src="{{ STATIC_PREFIX }}js/init.js" type="text/javascript" charset="utf-8"></script>
         <div class="well span6 offset3">
           <ul class="breadcrumb">
+			<li>
+              <a href="/">Home</a>
+              <span class="divider">/</span>
+            </li>
             <li>
               <a href="/floor/{{ room.floor_id }}">Floor {{ room.floor_id }}</a>
               {% if title == "Room" %}
@@ -31,19 +37,27 @@
 
             <div class="post">
               <p>Post something on this {{ title|lower }}'s wall!</p>
-              <form class="form-horizontal">
-                <textarea style="max-width:80%; width:80%;"></textarea>
-                <a style="width:10%;" class="pull-right btn btn-primary">Post!</a>
-              </form>
+				{% get_comment_form for room as form %}
+				<table>
+				  <form action="{% comment_form_target %}" method="post">{% csrf_token %}
+					{{ form }}
+					<tr>
+					  <td colspan="2">
+						<input style="width:10%;" class="pull-right btn btn-primary" type="submit" name="submit" value="Post!">
+						<!--input type="submit" name="preview" value="Preview"-->
+					  </td>
+					</tr>
+				  </form>
+				</table>
             </div>
-
-            {% for comment in comments %}
+			{% get_comment_list for room as comment_list %}
+			{% for comment in comment_list %}
             <div class="comment well">
-              Comm# {{ comment.comment_id }}<br />
+			  Comm# {{ comment.id }} <br/>
               {{ comment.comment }}
-              {{ comment.date_created }}
+              {{ comment.submit_date }}
             </div>
-            {% endfor %}
+			{% endfor %}
 
           </div>
 
