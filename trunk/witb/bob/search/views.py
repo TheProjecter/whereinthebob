@@ -12,6 +12,7 @@ from django.shortcuts import get_object_or_404, render_to_response
 def index(request):
 	query_string = ''
 	query_results = None
+	search_string = ''
 
 	if ('search_string' in request.GET) and request.GET['search_string'].strip():
 		search_string = request.GET['search_string']
@@ -22,7 +23,8 @@ def index(request):
 		'title': 'Search',
 		'home' : False,
 		'query_string': query_string, 
-		'query_results': query_results
+		'query_results': query_results,
+		'keywords': search_string
 	})
 
 	return render_to_response('search.html', c)
