@@ -3,7 +3,7 @@
 		<head>
 		    <title>Search{% if query %} Results{% endif %}</title>
 		</head>
-
+		{% if keywords %}
         <div class="well span6 offset3">
           <ul class="breadcrumb">
             <li>
@@ -11,7 +11,6 @@
             </li>
           </ul>
           
-
           <div id="search_results" class="span6" style="margin-left:0px;">
 
             {% if query_results %}
@@ -21,7 +20,7 @@
 		    </ul>
 			{% endfor %}
 			{% else %}
-		    <p>No match is found.</p>
+		    <p>No match is found. Try shorter keywords?</p>
 			{% endif %}
 
 
@@ -29,4 +28,5 @@
 
 
         </div>
+		{% endif %}
 {% endblock %}
