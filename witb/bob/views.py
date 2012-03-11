@@ -2,7 +2,6 @@ from django.template import Context, loader
 from django.shortcuts import render_to_response
 from django.http import HttpResponse
 
-
 def index(request):
     t = loader.get_template('layout.html')
     c = Context({

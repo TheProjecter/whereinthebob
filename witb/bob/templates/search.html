@@ -17,7 +17,7 @@
             {% if query_results %}
 			{% for result in query_results %}
 			<ul>
-        		<li><a href="/room/{{ result }}"> {{ result }} </a></li>
+        		<li><a href="/room/{{ result }}"> {{ result.description }} </a></li>
 		    </ul>
 			{% endfor %}
 			{% else %}
