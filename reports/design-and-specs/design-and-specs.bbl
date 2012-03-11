@@ -1,0 +1,29 @@
+\begin{thebibliography}{1}
+
+\bibitem{twitter-bootstrap}
+Twitter Bootstrap (\texttt{http://twitter.github.com/bootstrap/})
+
+\emph{Simple and flexible HTML, CSS, and Javascript for popular user
+interface components and interactions}.
+
+
+\bibitem{inkscape}
+Inkscape (\texttt{http://inkscape.org/})
+
+\emph{An Open Source vector graphics editor}.
+
+
+\bibitem{raphaeljs}
+RaphaelJS (\texttt{http://raphaeljs.com/})
+
+\emph{Raphaël is a small JavaScript library that simplifies your work with
+vector graphics on the web}.
+
+
+\bibitem{svg-support}
+Browser support for \texttt{SVG} (\texttt{http://caniuse.com/\#search=svg})
+
+
+
+
+\end{thebibliography}
