@@ -4,6 +4,9 @@
 \usepackage{graphics,graphicx}
 \usepackage{subfigure}
 
+\usepackage{listings}
+\lstset{language=Html}
+
 \usepackage{aeguill}
 
 \usepackage{epsfig}
@@ -313,8 +316,26 @@ displays the floor number. The structure of these pages:
 \end{enumerate}
 
 \subsection*{Technologies}
-The client interface uses standard compliant \texttt{HTML} and \texttt{CSS} to
-structure and present the information. 
+The client interface uses standard compliant \texttt{HTML5} and \texttt{CSS} to
+structure and present the information. We chose the Twitter Bootsrap
+\cite{twitter-bootsrap} CSS Framework due to the ease with which HTML+CSS
+templates can be produced, as opposed to making everything from scratch, and
+because it has a number of pre-built, visually pleasent UI components.
+
+The floor plans have been converted from \texttt{PDF} to \texttt{SVG} using
+Inkscape\cite{inkscape}. Being an automated process, the produced \texttt{XML}
+was bloated, and difficult to use, so we wrote a small \texttt{Python} script
+that parsed the \texttt{SVG} and removed all that was unnecessary. Our script
+produced a \texttt{JavaScript} file containing all the \texttt{SVG} paths for
+each room of the floor. These were needed by \texttt{Raphael.js}\cite{raphaeljs}
+, in order to create the \texttt{SVG} in the \texttt{DOM}. An alternative to
+this would have been to include the map directly into the \texttt{HTML} (e.g.: 
+\lstinline!<img src=``map.svg'' />!), but not all the browsers (i.e.: Internet
+Explorer) support the format\cite{svg-support}, even though it is a standard
+released in 2001 and it's pretty awesome. What \texttt{Raphael.js} did was to
+re-create the \texttt{SVG} \texttt{XML} nodes in the \texttt{DOM}, and in the
+case of IE, it used \texttt{VML}, which is deprecated, yet supported by IE.
+
 
 
 \section{Application Architecture}
