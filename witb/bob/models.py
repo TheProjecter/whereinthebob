@@ -10,16 +10,15 @@ class Floor(models.Model):
 	date_updated = models.DateTimeField(null=True, editable=False, auto_now=True)
 	level = models.IntegerField()
 	rating = models.IntegerField(default=0, null=True)
-
+	def __unicode__(self):
+		return str(self.floor_id)
+"""
 	#vodoo
 	comments = generic.GenericRelation('Comment')
 	#end vodoo
+"""
 
-	def __unicode__(self):
-		return str(self.floor_id)
-
-
-
+"""
 class Comment(models.Model):
 	comment_id = models.AutoField(primary_key=True)
 
@@ -39,7 +38,7 @@ class Comment(models.Model):
 	def getByGuid(self,gid):
 		result =  Comment.objects.filter(guid=gid)
 		return result
-
+"""
 
 	      
 class Room(models.Model):
@@ -48,14 +47,13 @@ class Room(models.Model):
     	type_id = models.ForeignKey('Room_Type')
     	description = models.CharField(max_length=200)
     	rating = models.IntegerField(default=0, null=True)
-	
+    	def __unicode__(self):
+        	return str(self.room_id)
+"""	
 	#vodoo
 	comments = generic.GenericRelation('Comment')
 	#end vodoo
-
-    	def __unicode__(self):
-        	return str(self.room_id)
-
+"""
     
 class Room_Type(models.Model):
     	type_id = models.IntegerField(primary_key=True)
