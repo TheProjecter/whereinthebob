@@ -6,8 +6,10 @@ from django.http import HttpResponse
 from bob.models import Floor
 from bob.models import Room
 from django.template import Context, loader
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render_to_response
+from django.core.urlresolvers import reverse
+
 
 def index(request):
 	query_string = ''
@@ -27,7 +29,12 @@ def index(request):
 		'keywords': search_string
 	})
 
-	return render_to_response('search.html', c)
+	if (len(query_results) == 1):
+		return HttpResponseRedirect('/room/' + str(query_results[0].room_id));
+		
+	else:
+		return render_to_response('search.html', c)
+
 
 def normalize_query(query_string,
                     findterms=re.compile(r'"([^"]+)"|(\S+)').findall,
