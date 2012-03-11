@@ -621,7 +621,30 @@ have picked the Good Work answer.\\
 
 \section{Implementation notes}
 
+\subsection{Views}
 
+\textbf{Directory/ - Directory of rooms and floors}\\
+This view displays a list of rooms and floors the user thereby  implementing the Browser Functionality.\\
+\\     
+\textbf{Floor/ - Display Floor Details}\\
+This view  displays the floor plan and associated comments for a particular room passed in by id.\\
+\\              
+\textbf{Room/ - Display Room Details}\\
+This view  displays the floor plan with the specific room
+highligthed for quick identification by the user as well as the
+room specific comments left by other users.\\
+\\
+\textbf{Search/ - Displays a list of search results or redirects to a specific room}\\
+This view displays a list of rooms , an error message or redirectos to
+ a Room/ view in the case that a single room has been returned from the search\\
+\\ 
+                                          
+As the application is dedicated to a single highly specialized task our URL Mapping Schema
+is a one-to-one mapping of the relative path and view name. As an example , accesing the 
+search functionality is as siple as accesing the /search URL.\\
+\\                                        
+Having all the requred data contained within our own Database , no external services are required or used.
+As a future development , user authentication might be handled by an external LDAP server or similar.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
