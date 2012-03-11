@@ -3,7 +3,7 @@
 		<script src="raphael-min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript" charset="utf-8">
         window.onload = function () {
-            var R = Raphael("paper", 800, 800);
+            var R = Raphael("paper", 462, 540);
             var attr = {
                 fill: "#fff",
                 stroke: "#000",
@@ -11,7 +11,7 @@
                 "stroke-linejoin": "round"
             };
             var bol5 = {};
-			// bol5.path14 = R.path("M0,0,842,0,842,1191,0,1191,0,0z").attr(attr);
+
 bol5.path1638 = R.path("m215.88,649.89,0,5.64").attr(attr);
 bol5.path1656 = R.path("m315.6,653.85,22.92,0").attr(attr);
 bol5.path1660 = R.path("m386.16,568.65,0-21.96").attr(attr);
@@ -687,38 +687,40 @@ bol5.path3702 = R.path("m305.04,598.89,0.84,0m-0.84,1.8,0.84,0m139.56,197.28-6.8
 bol5.path3710 = R.path("m524.16,535.53,0.72,0m12.96,0,0.72,0").attr(attr);
 bol5.path3714 = R.path("m524.16,655.53,0.72,0m12.96,0,0.72,0").attr(attr);
 bol5.path3720 = R.path("m500.76,289.41-7.2,0,0,2.16m2.88,4.32-38.04,0m157.2-4.32-1.44,0m-392.64,528.36,0-1.44m145.68-457.8,0.12,0m10.2,329.16,0,7.56").attr(attr);
-bol5.path3726 = R.path("m231.24,586.77-5.76-5.76").attr(attr);
-bol5.path3730 = R.path("m231.24,549.45-5.76,5.64").attr(attr);
-bol5.path7668 = R.path("m420.96,8.9677,0,5.8799").attr(attr);
+// bol5.path3726 = R.path("m231.24,586.77-5.76-5.76").attr(attr);
+// bol5.path3730 = R.path("m231.24,549.45-5.76,5.64").attr(attr);
+// bol5.path7668 = R.path("m420.96,8.9677,0,5.8799").attr(attr);
 
 var dont = ["path1636","path1640","path1642","path1644","path1646","path1648","path1650","path1652","path1654","path1658","path1662","path1666","path1670","path1672","path1674","path1678","path1682","path1698","path1710","path1722","path1740","path1744","path1746","path1748","path1750","path1754","path1760","path1764","path1768","path1770","path1772","path1774","path1776","path1778","path1780","path1782","path1784","path1786","path1788","path1798","path1802","path1806","path1810","path1814","path1818","path1822","path1826","path1830","path1834","path1838","path1842","path1846","path1850","path1854","path1866","path1872","path1876","path1880","path1888","path1898","path1966","path1970","path1974","path1980","path1984","path2010","path2032","path2048","path2054","path2058","path2064","path2082","path2086","path2130","path2134","path2184","path2192","path2320","path2330","path2336","path2360","path2366","path2370","path2452","path2456","path2462","path2466","path2470","path2474","path2478","path2482","path2486","path2510","path2518","path2522","path2528","path2530","path2532","path2536","path2540","path2544","path2548","path2552","path2556","path2560","path2564","path2568","path2572","path2576","path2580","path2584","path2594","path2598","path2602","path2606","path2608","path2612","path2616","path2620","path2624","path2628","path2634","path2640","path2642","path2646","path2660","path2666","path2670","path2672","path2674","path2820","path2824","path2828","path2832","path2840","path2844","path2848","path2850","path2852","path2854","path2856","path2858","path2860","path2862","path2866","path2870","path2874","path2878","path2882","path2886","path2890","path2894","path2898","path2902","path2906","path2910","path2914","path2918","path2922","path2926","path2930","path2934","path2936","path2938","path2942","path2946","path2950","path2954","path2958","path2962","path2966","path2970","path2974","path2978","path2982","path2984","path2986","path2988","path2992","path2996","path3000","path3004","path3008","path3012","path3016","path3020","path3024","path3028","path3032","path3036","path3040","path3044","path3048","path3052","path3056","path3060","path3062","path3064","path3068","path3072","path3076","path3080","path3084","path3088","path3092","path3096","path3100","path3104","path3108","path3112","path3116","path3120","path3124","path3128","path3132","path3136","path3140","path3144","path3148","path3152","path3156","path3160","path3164","path3168","path3172","path3176","path3180","path3184","path3186","path3188","path3192","path3196","path3200","path3204","path3208","path3212","path3216","path3220","path3224","path3228","path3232","path3236","path3238","path3242","path3246","path3250","path3254","path3258","path3262","path3266","path3270","path3274","path3278","path3282","path3286","path3290","path3294","path3298","path3302","path3306","path3310","path3314","path3318","path3322","path3326","path3330","path3334","path3338","path3342","path3346","path3350","path3354","path3358","path3362","path3366","path3370","path3374","path3378","path3382","path3384","path3386","path3390","path3394","path3398","path3402","path3406","path3408","path3410","path3414","path3418","path3422","path3426","path3430","path3434","path3438","path3442","path3446","path3450","path3454","path3458","path3462","path3466","path3470","path3474","path3478","path3482","path3486","path3490","path3494","path3498","path3502","path3506","path3510","path3514","path3518","path3522","path3526","path3530","path3534","path3538","path3542","path3546","path3550","path3554","path3558","path3562","path3566","path3570","path3574","path3578","path3582","path3586","path3590","path3594","path3598","path3602","path3606","path3610","path3614","path3618","path3620","path3622","path3626","path3630","path3634","path3638","path3642","path3646","path3650","path3654","path3658","path3662","path3666","path3672","path3676","path3680","path3684","path3688","path3692","path3698","path3702","path3710","path3714","path3720","path3726","path3730","path7668"]
 
+            // bol5.transform("0,1.25,1.25,0,0,0");
 
  			var current = null;
-            for (var state in bol5) {
-                bol5[state].color = Raphael.getColor();
-                (function (st, state) {
+            for (var room in bol5) {
+                bol5[room].scale(0.6,0.6,0,0);
+                bol5[room].color = Raphael.getColor();
+                (function (st, room) {
                     st[0].style.cursor = "pointer";
-                    if(dont.indexOf(state) == -1 ){
+                    if(dont.indexOf(room) == -1 ){
 	                    st[0].onmouseover = function () {
 	                        // current && bol5[current].animate({fill: "#333", stroke: "#666"}, 500) && (document.getElementById(current).style.display = "");
 	                        st.animate({fill: st.color, stroke: "#ccc"}, 500);
 	                        st.toFront();
 	                        R.safari();
-	                        // document.getElementById(state).style.display = "block";
-	                        // alert(state)
-	                        current = state;
+	                        // document.getElementById(room).style.display = "block";
+	                        // alert(room)
+	                        current = room;
 	                    };
 	                    st[0].onmouseout = function () {
 	                        st.animate({fill: "#333", stroke: "#666"}, 500);
 	                        st.toFront();
 	                        R.safari();
 	                    };
-	                    if (state == "nsw") {
+	                    if (room == "nsw") {
 	                        st[0].onmouseover();
 	                    }
 	                }
-                })(bol5[state], state);
+                })(bol5[room], room);
             }
         };
         </script>
