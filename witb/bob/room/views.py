@@ -1,4 +1,4 @@
-from bob.models import Room
+from bob.models import Room, Floor
 from django.template import Context, loader, RequestContext
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
@@ -13,7 +13,6 @@ def index(request, id):
 		'home' : False,
 		'room' : room,
 		#'comments' : comments,
-		'id' : id 	#kept only for the placeholder image;
 	})
 	return HttpResponse(t.render(c))
     
