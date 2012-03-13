@@ -20,7 +20,7 @@ class CommentAdmin(admin.ModelAdmin):
 """
 class RoomAdmin(admin.ModelAdmin):
 	readonly_fields = ['rating']
-	fields = [ 'floor_id','type_id', 'description','rating']
+	fields = ['room_id', 'floor_id','type_id', 'description','rating']
 	list_display = ('room_id','floor_id','type_id','description','rating')
 	list_filter = ['floor_id']
 	#inlines = [ CommentInline,]

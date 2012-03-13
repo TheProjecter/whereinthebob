@@ -42,13 +42,14 @@ class Comment(models.Model):
 
 	      
 class Room(models.Model):
-	room_id = models.AutoField(primary_key=True)
-    	floor_id = models.ForeignKey('Floor');
-    	type_id = models.ForeignKey('Room_Type')
-    	description = models.CharField(max_length=200)
-    	rating = models.IntegerField(default=0, null=True)
-    	def __unicode__(self):
-        	return str(self.room_id)
+	room_id = models.CharField(primary_key=True, max_length=10)
+	floor_id = models.ForeignKey('Floor')
+	type_id = models.ForeignKey('Room_Type')
+	description = models.CharField(max_length=200)
+	rating = models.IntegerField(default=0, null=True)
+	
+	def __unicode__(self):
+		return str(self.room_id)
 """	
 	#vodoo
 	comments = generic.GenericRelation('Comment')
@@ -60,7 +61,7 @@ class Room_Type(models.Model):
     	type_name = models.CharField(max_length=100) 
 
 	def __unicode__(self):
-		return str(self.type_id)
+		return str(self.type_id) + ". " + self.type_name
 
 class Room_Name(models.Model):
     	room_id = models.ForeignKey('Room')
