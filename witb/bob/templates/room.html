@@ -3,7 +3,7 @@
 {% load comments %}
 {% get_comment_count for room as comment_count %}.
         <script src="{{ STATIC_PREFIX }}js/raphael-min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="{{ STATIC_PREFIX }}js/paths-level{{ room.floor_id }}.js" type="text/javascript" charset="utf-8"></script>
+        <script src="{{ STATIC_PREFIX }}js/paths-level{{ room.floor_id.level }}.js" type="text/javascript" charset="utf-8"></script>
         <script src="{{ STATIC_PREFIX }}js/init.js" type="text/javascript" charset="utf-8"></script>
         <div class="well span6 offset3">
           <ul class="breadcrumb">
