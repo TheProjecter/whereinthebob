@@ -9,9 +9,13 @@
           
           {% for floor in floors %}
           <div class="level-group">
-            <h3><a href="/floor/{{ floor.floor_id }}">Level {{ floor.floor_id }}</a></h3>
+            <h3><a href="/floor/{{ floor.level }}">Level {{ floor.level }}</a></h3>
             <ul>
-              <li>Room 421</li>
+              {% for room in rooms %}
+                {# ifequal room.floor_id floor.floor_id #}
+                <li><a href="{% url bob.room.views.index room.room_id %}">Room {{ room.room_id }}</a></li>
+                {# endifequal #}
+              {% endfor %}
             </ul>
           </div>
           {% endfor %}
