@@ -1,6 +1,6 @@
 from django.template import Context, loader
 from django.shortcuts import render_to_response
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 
 def index(request):
     t = loader.get_template('layout.html')
@@ -9,6 +9,11 @@ def index(request):
         'home' : True
     })
     return HttpResponse(t.render(c))
+
+def comment(request):
+    # Redirecting after comment submission
+    return HttpResponseRedirect(request.POST['next'])
+
     
     #
     # This works for static pages (just get rid of

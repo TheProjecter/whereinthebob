@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes import generic
+from django.contrib.comments.models import Comment, BaseCommentAbstractModel
+
 import uuid
 
 class Floor(models.Model):
@@ -39,7 +41,7 @@ class Comment(models.Model):
 		result =  Comment.objects.filter(guid=gid)
 		return result
 """
-
+#class myComment(Comment):
 	      
 class Room(models.Model):
 	room_id = models.CharField(primary_key=True, max_length=10)
