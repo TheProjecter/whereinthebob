@@ -37,9 +37,10 @@
 				<table>
 				  <form action="{% comment_form_target %}" method="post">{% csrf_token %}
 					{{ form }}
+					<input type="hidden" name="next" value="{{ request.path }}" />
 					<tr>
 					  <td colspan="2">
-						<input style="width:10%;" class="pull-right btn btn-primary" type="submit" name="submit" value="Post!">
+						<input style="width:10%;" class="pull-right btn btn-primary" type="submit" name="submit" value="Post!" />
 						<!--input type="submit" name="preview" value="Preview"-->
 					  </td>
 					</tr>
@@ -50,8 +51,8 @@
 			{% for comment in comment_list %}
             <div class="comment well">
 			  Comm# {{ comment.id }} <br/>
-              {{ comment.comment }}
-              {{ comment.submit_date }}
+              {{ comment.comment }} <br/>
+              Post at: {{ comment.submit_date }}
             </div>
 			{% endfor %}
 
